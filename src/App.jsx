@@ -9,8 +9,8 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Temporal} />
-          <Route exact path="/cursos" component={Temporal2} />
+          <Route exact path="/nido/" component={Temporal} />
+          <Route exact path="/nido/cursos" component={Temporal2} />
           {/* <Route exact path="/contacto" component={} /> */}
         </Switch>
       </BrowserRouter>
