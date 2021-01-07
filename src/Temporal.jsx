@@ -1,5 +1,7 @@
+import React from "react";
+
 const Temporal = () => {
-  return "mari";
+  return <h1>MARI</h1>;
 };
 
 export default Temporal;

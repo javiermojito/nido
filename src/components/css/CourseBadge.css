@@ -1,0 +1,45 @@
+.badge {
+  display: flex;
+  align-content: flex-start;
+  -webkit-box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  width: 510px;
+  height: 225px;
+}
+
+.bagde-img {
+  width: 170px;
+  height: 225px;
+}
+
+.bagde-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 44px;
+}
+
+.bagde-info {
+  width: 340px;
+  height: 225px;
+  padding-left: 28px;
+  padding-right: 0px;
+  background-color: white;
+}
+
+.bagde-info p {
+  size: 16pt;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.bagde-info h3 {
+  size: 25pt;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.bagde-info #badge-duracion {
+  font-weight: 400;
+}
