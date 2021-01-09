@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nido/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/nido/static/js/main.32cc03f8.chunk.js",
-    "main.js.map": "/nido/static/js/main.32cc03f8.chunk.js.map",
+    "main.css": "/nido/static/css/main.66ddd5de.chunk.css",
+    "main.js": "/nido/static/js/main.d4b524e7.chunk.js",
+    "main.js.map": "/nido/static/js/main.d4b524e7.chunk.js.map",
     "runtime-main.js": "/nido/static/js/runtime-main.8c3271c4.js",
     "runtime-main.js.map": "/nido/static/js/runtime-main.8c3271c4.js.map",
-    "static/js/2.50e412d8.chunk.js": "/nido/static/js/2.50e412d8.chunk.js",
-    "static/js/2.50e412d8.chunk.js.map": "/nido/static/js/2.50e412d8.chunk.js.map",
+    "static/js/2.cba903d1.chunk.js": "/nido/static/js/2.cba903d1.chunk.js",
+    "static/js/2.cba903d1.chunk.js.map": "/nido/static/js/2.cba903d1.chunk.js.map",
     "index.html": "/nido/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/nido/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.50e412d8.chunk.js.LICENSE.txt": "/nido/static/js/2.50e412d8.chunk.js.LICENSE.txt"
+    "static/css/main.66ddd5de.chunk.css.map": "/nido/static/css/main.66ddd5de.chunk.css.map",
+    "static/js/2.cba903d1.chunk.js.LICENSE.txt": "/nido/static/js/2.cba903d1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8c3271c4.js",
-    "static/js/2.50e412d8.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.32cc03f8.chunk.js"
+    "static/js/2.cba903d1.chunk.js",
+    "static/css/main.66ddd5de.chunk.css",
+    "static/js/main.d4b524e7.chunk.js"
   ]
 }
