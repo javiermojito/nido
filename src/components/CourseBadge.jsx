@@ -1,11 +1,20 @@
 import React from "react";
 import "./css/CourseBadge.css";
+import { useHistory } from "react-router-dom";
 
 class CourseBadge extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  handleClick() {
+    this.props.history.push(this.props.courseRoute);
+  }
+
   render() {
     return (
-      <div className="badge">
-        <div className="bagde-img" style={this.props.style}>
+      <div className="badge" onClick={this.handleClick.bind(this)}>
+        <div className="bagde-img" style={this.props.backgroundStyle}>
           <img src={this.props.image} alt={this.props.imageAlt} />
         </div>
         <div className="bagde-info">

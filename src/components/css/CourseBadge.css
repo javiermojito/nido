@@ -43,3 +43,7 @@
 .bagde-info #badge-duracion {
   font-weight: 400;
 }
+
+.badge:hover {
+  cursor: pointer;
+}
