@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/Header.css";
 
 import { Link } from "react-router-dom";
 
@@ -6,15 +7,18 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
+        <Link to="/">
+          <div className="nav-logo-left-section"></div>
+        </Link>
+        <ul className="nav-right-section">
           <li>
-            <Link to="/"> inicio </Link>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/cursos"> Cursos </Link>
+            <Link to="/cursos">Cursos</Link>
           </li>
           <li>
-            <Link to="/contacto"> Contacto </Link>
+            <Link to="/contacto">Contacto</Link>
           </li>
         </ul>
       </nav>
