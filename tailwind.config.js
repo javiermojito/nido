@@ -10,8 +10,11 @@ module.exports = {
       xxl: "1920px",
     },
     fontFamily: {
-      display: ["Gilroy", "sans-serif"],
-      body: ["Graphik", "sans-serif"],
+      /* display: ["Gilroy", "sans-serif"],
+      body: ["Graphik", "sans-serif"], */
+      display: ["Roboto"],
+      body: ["Roboto"],
+      header: ["Poppins"],
     },
     extend: {},
   },
