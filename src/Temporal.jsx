@@ -1,5 +1,6 @@
 import React from "react";
 import CourseHero from "./components/CourseHero";
+import Content from "./components/Content";
 
 const Temporal = (props) => {
 
@@ -69,10 +70,11 @@ const Temporal = (props) => {
 
   return (
     <React.Fragment>
-      <CourseHero {...course1} />;
+      {/* <CourseHero {...course1} />;
       <CourseHero {...course2} />;
       <CourseHero {...course3} />;
-      <CourseHero {...course4} />;
+      <CourseHero {...course4} />; */}
+      <Content />
     </React.Fragment>
   );
 };
