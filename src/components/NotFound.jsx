@@ -7,9 +7,9 @@ const NotFound = () => {
         <img src="https://i.imgur.com/RA1pMaW.png" alt="404 NOT FOUND IMAGE" />
       </div>
       <div className="flex flex-col md:my-auto md:ml-0 md:w-96" >
-        <div className="text-normal text-center	text-3xl md:text-4xl md:text-left lg:text-4xl font-bold">404 NOT FOUND</div>
+        <div className="text-normal text-center	text-3xl md:text-4xl md:text-left lg:text-4xl font-extrabold">404 NOT FOUND</div>
         <div className="text-center text-2xl pl-8 pr-8 pt-4 pb-3 md:text-left md:pl-0">
-          El recurso al que intentas acceder, al parecer, no existe.
+          El recurso al que intentas acceder, al parecer, <span className="font-bold">no existe.</span> 
         </div>
         <div className="text-center	text-normal md:text-left">
           Illustration by <a className="font-bold" href="http://www.saramaese.com/">Sara Maese</a> from{" "}

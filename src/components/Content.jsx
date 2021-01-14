@@ -7,14 +7,14 @@ const Content = () => {
 
   return (
     <div className="flex flex-wrap justify-center mt-5 mb-5">
-      <div className="w-4/5 h-64 bg-white lg:h-screen">
+      <div className="w-4/5 h-64 lg:h-screen">
         <a
           className="lg:hidden cursor-pointer"
           href="https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8"
         >
           {" "}
-          {/* IMPORTANTE CAMBIAR EL ENLACE */}
-          <div className="rounded-xl bg-gradient-to-br from-green-600 via-green-500 to-green-400 w-full h-full flex flex-wrap content-center">
+          {/* IMPORTANTE CAMBIAR EL ENLACE  TODO*/}
+          <div className="rounded-xl bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 w-full h-full flex flex-wrap content-center shadow-md  lg:shadow-none">
             <img
               className="mx-auto"
               src="https://i.imgur.com/h6QYw4a.png"
