@@ -74,6 +74,7 @@ const Temporal = (props) => {
       <CourseHero {...course2} />;
       <CourseHero {...course3} />;
       <CourseHero {...course4} />; */}
+      <CourseHero {...course1} />
       <Content />
     </React.Fragment>
   );

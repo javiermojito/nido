@@ -16,6 +16,16 @@ module.exports = {
       body: ["Roboto"],
       poppins: ["Poppins"],
     },
+    filter: { // defaults to {}
+      'none': 'none',
+      'grayscale': 'grayscale(1)',
+      'invert': 'invert(1)',
+      'sepia': 'sepia(1)',
+    },
+    backdropFilter: { // defaults to {}
+      'none': 'none',
+      'blur': 'blur(20px)',
+    },
     extend: {
       height: theme => ({
         "screen/2": "50vh",
