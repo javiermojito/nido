@@ -10,7 +10,7 @@ const Content = (props) => {
   return (
     <React.Fragment>
       <div className="flex flex-wrap justify-center pt-5 pb-5 bg-white shadow-sm">
-        <div className="w-4/5">
+        <div className="w-2/3">
           <div className="text-black font-medium text-lg pb-4 text-center sm:text-left">Objeto Virtual de Aprendizaje</div>
           <div className="flex flex-row gap-x-5 text-center sm:text-left">
             <div>
@@ -26,7 +26,7 @@ const Content = (props) => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center mt-5 mb-5">
-        <div className="w-4/5 h-64 lg:h-screen">
+        <div className="w-2/3 h-64 lg:h-screen">
           <a
             className="lg:hidden cursor-pointer"
             href="https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8"
