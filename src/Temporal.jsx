@@ -15,7 +15,7 @@ const Temporal = (props) => {
     imageAlt: "Logo introducción al diseño",
     backgroundStyle: { backgroundColor: "#B7B6B6"},
     textColor: {color:"#000"},
-    duration: "20 minutes",
+    duration: "20",
     courseRoute: "/cursos/introduccion-diseño",
     numUnits: 5,
     numSubjects: 15,
@@ -31,7 +31,7 @@ const Temporal = (props) => {
     imageAlt: "Logo Teoría de color",
     backgroundStyle: { backgroundColor: "#222222" },
     textColor: {color:"#FFF"},
-    duration: "30 minutes",
+    duration: "30",
     courseRoute: "/cursos/teoria-color",
     numUnits: 6,
     numSubjects: 23,
@@ -47,7 +47,7 @@ const Temporal = (props) => {
     imageAlt: "Logo Diseño UX",
     backgroundStyle: { backgroundColor: "#342343" },
     textColor: {color:"#FFF"},
-    duration: "30 minutes",
+    duration: "30",
     courseRoute: "/cursos/diseno-ui",
     numUnits: 6,
     numSubjects: 23,
@@ -63,7 +63,7 @@ const Temporal = (props) => {
     imageAlt: "Logo Diseño UI/UX",
     backgroundStyle: { backgroundColor: "#4E410E" },
     textColor: {color:"#FFF"},
-    duration: "30 minutes",
+    duration: "30",
     courseRoute: "/cursos/diseno-uiux",
     numUnits: 6,
     numSubjects: 23,
@@ -75,8 +75,8 @@ const Temporal = (props) => {
       <CourseHero {...course2} />;
       <CourseHero {...course3} />;
       <CourseHero {...course4} />; */}
-      {/* <CourseHero {...course1} /> */}
-      <Content />
+      <CourseHero {...course3} />
+      <Content {...course3}/>
       <ActionButtons />
 
     </React.Fragment>
