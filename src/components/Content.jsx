@@ -12,7 +12,7 @@ const Content = (props) => {
       <div className="flex flex-wrap justify-center pt-5 pb-5 bg-white shadow-sm">
         <div className="w-2/3">
           <div className="text-black font-medium text-lg pb-4 text-center sm:text-left">Objeto Virtual de Aprendizaje</div>
-          <div className="flex flex-row gap-x-5 justify-center sm:justify-start">
+          <div className="flex flex-row gap-x-5 justify-center text-center sm:justify-start">
             <div>
               <FontAwesomeIcon icon={faBook} /> {props.numUnits} Unidades
             </div>
