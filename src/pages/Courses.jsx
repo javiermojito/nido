@@ -13,7 +13,7 @@ const Courses = (props) => {
     imageAlt: "Logo introducción al diseño",
     backgroundStyle: { backgroundColor: "#B7B6B6"},
     textColor: {color:"#000"},
-    duration: "20 minutes",
+    duration: "20",
     courseRoute: "/cursos/introduccion-diseño",
     numUnits: 5,
     numSubjects: 15,
@@ -29,7 +29,7 @@ const Courses = (props) => {
     imageAlt: "Logo Teoría de color",
     backgroundStyle: { backgroundColor: "#222222" },
     textColor: {color:"#FFF"},
-    duration: "30 minutes",
+    duration: "30",
     courseRoute: "/cursos/teoria-color",
     numUnits: 6,
     numSubjects: 23,
@@ -45,7 +45,7 @@ const Courses = (props) => {
     imageAlt: "Logo Diseño UX",
     backgroundStyle: { backgroundColor: "#342343" },
     textColor: {color:"#FFF"},
-    duration: "30 minutes",
+    duration: "30",
     courseRoute: "/cursos/diseno-ui",
     numUnits: 6,
     numSubjects: 23,
@@ -61,7 +61,7 @@ const Courses = (props) => {
     imageAlt: "Logo Diseño UI/UX",
     backgroundStyle: { backgroundColor: "#4E410E" },
     textColor: {color:"#FFF"},
-    duration: "30 minutes",
+    duration: "30",
     courseRoute: "/cursos/diseno-uiux",
     numUnits: 6,
     numSubjects: 23,
@@ -70,7 +70,7 @@ const Courses = (props) => {
   return (
     <React.Fragment>
       <div className="text-5xl font-bold ml-20 mt-10 ">Cursos</div>
-      <div className="flex-wrap content-start grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-3 gap-x-8 gap-y-8  mt-10 m-5">
+      <div className="flex-wrap content-start grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-3 gap-x-8 gap-y-5  mt-10 m-5">
         <div>
           <Badge {...course1} />
         </div>

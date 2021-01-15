@@ -1,5 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { faBook, faTasks, faClock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./css/Badge.css";
 
 class Badge extends React.Component {
   constructor(props) {
@@ -13,39 +16,35 @@ class Badge extends React.Component {
   render() {
     return (
       <div
-        className="cursor-pointer flex flex-row rounded-xl h-56 min-h-0 md:min-h-full  bg-white shadow-md transition duration-400 ease-in-out transform hover:-translate-y-1 hover:scale-20 hover:shadow-lg"
+        className="cursor-pointer flex flex-row rounded-xl h-28 sm:h-40 min-h-0 bg-white shadow-md transition duration-400 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
         onClick={this.handleClick.bind(this)}
       >
-        <div
-          className=" flex flex-wrap content-center rounded-l-xl w-1/3 "
-          style={this.props.backgroundStyle}
-        >
-          <img
-            className="w-170 h-225 inline-block align-middle mx-auto"
-            src={this.props.image}
-            alt={this.props.imageAlt}
-          />
+        <div className=" flex flex-wrap content-center rounded-l-xl w-1/3" style={this.props.backgroundStyle}>
+          <img className="h-20 sm:h-28 inline-block align-middle mx-auto" src={this.props.image} alt={this.props.imageAlt}/>
         </div>
-        <div className="flex flex-wrap content-between p-8 w-2/3">
-          <div>
-            <div className="text-xl font-medium text-black">
+        <div className="flex flex-col justify-between	gap-x-auto w-4/5 pl-4 pr-4 pt-4 pb-2">
+          <React.Fragment>
+          <div >
+            <div className="text-lg font-medium">
               {this.props.title}
             </div>
-            <div className="h-1">
-              <p className="text-gray-500 overflow-ellipsis">
-                {this.props.description}
-              </p>
+            <div className="description hidden sm:inline w-full h-12" >
+              <div>
+                <p className="text-gray-500">{this.props.description}</p>
+              </div>
             </div>
           </div>
-
-          <div>
-            <p>
-              <span className="font-bold">Duración:</span> {this.props.duration}
-            </p>
-            <p>
-              <span>{this.props.numUnits}</span> unidades -{" "}
-              <span>{this.props.numSubjects}</span> temas
-            </p>
+          </React.Fragment>
+          <div className="text-sm flex flex-col sm:flex-row sm:gap-x-4 pb-3">
+            <div>
+              <FontAwesomeIcon icon={faBook} /> {this.props.numUnits} Unidades
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faTasks} /> {this.props.numSubjects} temas
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faClock} /> {this.props.duration} minutos
+            </div>
           </div>
         </div>
       </div>
