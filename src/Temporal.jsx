@@ -3,6 +3,7 @@ import CourseHero from "./components/CourseHero";
 import Content from "./components/Content";
 import ActionButtons from "./components/ActionButtons";
 
+
 const Temporal = (props) => {
 
   var course1 = {
@@ -77,7 +78,7 @@ const Temporal = (props) => {
       <CourseHero {...course4} />; */}
       <CourseHero {...course3} />
       <Content {...course3}/>
-      <ActionButtons />
+      
 
     </React.Fragment>
   );
