@@ -69,7 +69,7 @@ const Courses = (props) => {
 
   return (
     <React.Fragment>
-      <div className="text-5xl font-bold ml-20 mt-10 ">Cursos</div>
+      <div className="text-5xl font-bold text-center mt-10 sm:ml-20 sm:text-left">Cursos</div>
       <div className="flex-wrap content-start grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-3 gap-x-8 gap-y-5  mt-10 m-5">
         <div>
           <Badge {...course1} />

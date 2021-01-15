@@ -22,10 +22,10 @@ class Badge extends React.Component {
         <div className=" flex flex-wrap content-center rounded-l-xl w-1/3" style={this.props.backgroundStyle}>
           <img className="h-20 sm:h-28 inline-block align-middle mx-auto" src={this.props.image} alt={this.props.imageAlt}/>
         </div>
-        <div className="flex flex-col justify-between	gap-x-auto w-4/5 pl-4 pr-4 pt-4 pb-2">
+        <div className="flex flex-col justify-between	gap-x-auto w-4/5 pl-4 pt-2 sm:pl-4 sm:pr-4 sm:pt-4 sm:pb-2">
           <React.Fragment>
           <div >
-            <div className="text-lg font-medium">
+            <div className="text-lg lg:text-xl font-medium">
               {this.props.title}
             </div>
             <div className="description hidden sm:inline w-full h-12" >
@@ -35,7 +35,7 @@ class Badge extends React.Component {
             </div>
           </div>
           </React.Fragment>
-          <div className="text-sm flex flex-col sm:flex-row sm:gap-x-4 pb-3">
+          <div className="text-sm flex flex-col sm:flex-row sm:gap-x-4 pb-3 ">
             <div>
               <FontAwesomeIcon icon={faBook} /> {this.props.numUnits} Unidades
             </div>
