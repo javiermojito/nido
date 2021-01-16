@@ -15,7 +15,11 @@ var data = [
     numSubjects: 15,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8" frameborder="0" allowfullscreen/>',
-    upNext:1,
+    linkForm: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUNjY3NkxRMzFBMDNIOE9SOEtYSDFLTURSQi4u",
+    linkReport: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
+    linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+    linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
+    upNext: 1,
   },
   {
     id: 1,
@@ -33,7 +37,11 @@ var data = [
     numSubjects: 23,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8" frameborder="0" allowfullscreen/>',
-    upNext:2,
+    linkForm: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUNjY3NkxRMzFBMDNIOE9SOEtYSDFLTURSQi4u",
+    linkReport: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
+    linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+    linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
+    upNext: 2,
   },
   {
     id: 2,
@@ -51,7 +59,11 @@ var data = [
     numSubjects: 23,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8" frameborder="0" allowfullscreen/>',
-    upNext:3,
+    linkForm: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUNjY3NkxRMzFBMDNIOE9SOEtYSDFLTURSQi4u",
+    linkReport: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
+    linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+    linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
+    upNext: 3,
   },
   {
     id: 3,
@@ -69,7 +81,11 @@ var data = [
     numSubjects: 23,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8" frameborder="0" allowfullscreen/>',
-    upNext:1,
+    linkForm: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUNjY3NkxRMzFBMDNIOE9SOEtYSDFLTURSQi4u",
+    linkReport: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
+    linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+    linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
+    upNext: 0,
   },
 ];
 
@@ -85,7 +101,7 @@ export function getCourseFromPath(path) {
   });
 }
 
-export function getCourseFromId(id){
+export function getCourseFromId(id) {
   return data.find((c) => {
     if (c.id === id) {
       return c;

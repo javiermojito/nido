@@ -32,7 +32,7 @@ const Content = (props) => {
           <div className="w-4/5 sm:w-2/3 h-64 lg:h-180">
             <a
               className="lg:hidden cursor-pointer"
-              href="https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8"
+              href={props.linkFrame}
             >
               {/* IMPORTANTE CAMBIAR EL ENLACE  TODO*/}
               <div className="rounded-xl bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 w-full h-full flex flex-wrap content-center shadow-md  lg:shadow-none transition duration-400 ease-in-out transform hover:-translate-y-0.5">
@@ -48,7 +48,7 @@ const Content = (props) => {
             </div>
           </div>
         </div>
-        <ActionButtons />
+        <ActionButtons {...props}/>
       </div>
     </React.Fragment>
   );
