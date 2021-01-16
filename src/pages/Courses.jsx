@@ -5,7 +5,6 @@ import {getCourses} from "../data";
 
 const Courses = (props) => {
   var data = getCourses();
-  console.log(data);
 
   return (
     <React.Fragment>

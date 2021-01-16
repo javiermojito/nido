@@ -8,9 +8,6 @@ import { getCourseFromId, getCourseFromPath } from "../data";
 class Course extends React.Component {
   constructor(props) {
     super(props);
-    console.log("course--");
-    console.log(props);
-    console.log("--course");
     var path = props.location.pathname;
     getCourseFromPath(path)
     this.course = getCourseFromPath(path);    
