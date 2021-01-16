@@ -1,6 +1,7 @@
 import React from "react";
 
 const CourseHero = (props) => {
+  console.log(props);
   return (
     <div className="flex flex-row h-60 md:h-96 xxl:h-screen/2	" style={props.backgroundStyle}>
       {/* <div className="w-3/5 font-poppins flex flex-col justify-center pl-5 pr-1">

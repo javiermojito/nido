@@ -1,20 +1,23 @@
 import React from "react";
 import { Switch, Route, HashRouter } from "react-router-dom";
 
-import Temporal from "./Temporal";
-import Temporal2 from "./Temporal2";
+import Home from "./pages/Home";
+import Course from "./pages/Course";
 import Courses from "./pages/Courses";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
 
+
 class App extends React.Component {
+
   render() {
     return (
-      <HashRouter>
+      <HashRouter >
         <Layout>
           <Switch>
-            <Route exact path="/" component={Temporal} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/cursos" component={Courses} />
+            <Route path ="/cursos" component={Course}/>
             <Route component={NotFound} />
           </Switch>
         </Layout>
