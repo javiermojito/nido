@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       {/* //Feature -> Sin conexión// */}
-      <div className="w-full flex flex-col col-1 h-128 bg-white pt-10 ">
+      <div className="w-full flex flex-col col-1 h-128 bg-white pt-14">
           <div className="h-6/7 w-full inline-block align-middle">
             <img className="pl-5 pr-5 w-auto mx-auto" src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png" alt="Feature sin conexión"/>
           </div>
