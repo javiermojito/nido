@@ -2,6 +2,14 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'greenNido': '#A0D762',
+      'redNido': '#E57B7B',
+      'purpleNido': '#6B406F',
+      'blueNido': '#5975AB',
+    }),
+
     screens: {
       sm: "640px",
       md: "768px",
