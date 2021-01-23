@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       {/* // Landing Large// */}
-      <div className="mx-auto h-128 w-full xl:w-5/6 xxl:h-160 ">
+      <div className="mx-auto h-128 w-full xl:w-5/6 xxl:h-160 hidden lg:block">
         <div className="w-full h-full mb-0 flex flex-row hidden lg:flex ">
           <div className="w-1/2 pl-7 pr-0 mr-0 flex flex-col col-1 justify-center">
             <h1 className="font-poppins font-semibold text-5xl tracking-tighter lg:pb-1 xl:pb-2">
