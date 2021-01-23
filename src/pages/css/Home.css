@@ -4,5 +4,9 @@
   background-size: 70%;
   background-position: right bottom;
   background-origin: border-box;
-
+}
+.header-home-sm{
+  background-size: 40%;
+  background-position: right;
+  background-image: url("https://blush.design/api/download?shareUri=paoNDgE8b&s=0.5%7Ef7d3bb&w=800&h=800&fm=png");
 }

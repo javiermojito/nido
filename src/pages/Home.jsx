@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       {/* // Landing // */}
-      <div className="header-home w-full h-96 pt-10 pl-7 pr-10 mb-0">
+      <div className="header-home w-full h-96 pt-10 pl-7 pr-10 mb-0 block sm:header-home-sm sm:hidden">
         <div className="">
           <h1 className="font-poppins font-semibold text-4xl tracking-tighter">
             Cursos gratuitos de diseño
@@ -22,6 +22,50 @@ const Home = () => {
           </Link>
         </div>
       </div>
+
+      {/* // Landing SM-MD FIX// */}
+      <div className="w-full h-96 pt-10 pl-7 mb-0 flex flex-row hidden sm:flex lg:hidden">
+        <div className="w-2/5 pt-5 pl-5">
+          <h1 className="font-poppins font-semibold text-4xl tracking-tighter">
+            Cursos gratuitos de diseño
+          </h1>
+          <p className="font-popping text-2xl tracking-tighter leading-7">
+            Aprende con recursos digitales a tu alcance
+          </p>
+          <br />
+          <Link to="/cursos">
+            <div className="w-max h-auto bg-greenNido pl-4 pr-4 pt-2 pb-2 font-semibold font-poppins border-solid border-2 border-black botder-opacity-100">
+              Ver Cursos
+            </div>
+          </Link>
+        </div>    
+        <img className="mr-0 object-contain object-right-bottom w-3/5 h-auto" src="https://i.imgur.com/uPxYhjx.png" alt="Girl sitting in front of computer"/>
+      </div>
+
+      {/* // Landing Large// */}
+      <div className="mx-auto h-128 w-full xl:w-5/6 xxl:h-160 ">
+        <div className="w-full h-full mb-0 flex flex-row hidden lg:flex ">
+          <div className="w-1/2 pl-7 pr-0 mr-0 flex flex-col col-1 justify-center">
+            <h1 className="font-poppins font-semibold text-5xl tracking-tighter lg:pb-1 xl:pb-2">
+              Cursos gratuitos de diseño
+            </h1>
+            <p className="font-popping text-3xl tracking-tighter leading-7 lg:pb-2 xl:pb-0">
+              Aprende con recursos digitales a tu alcance
+            </p>
+            <br />
+            <br className="hidden xl:flex"/>
+            <Link to="/cursos">
+              <div className="w-max h-auto bg-greenNido text-xl pl-4 pr-4 pt-2 pb-2 font-semibold font-poppins border-solid border-2 border-black botder-opacity-100">
+                Ver Cursos
+              </div>
+            </Link>
+          </div>    
+          <div className="w-1/2 flex flex-wrap content-center">
+            <img  className="h-auto w-max mx-auto xxl:w-180" src="https://blush.design/api/download?shareUri=paoNDgE8b&s=0.5%7Ef7d3bb&w=800&h=800&fm=png" alt="Girl sitting in front of computer"/>
+          </div>
+        </div>
+      </div>
+      
 
       {/* // Feature -> sin costo // */}
       <div className="w-full flex flex-col bg-redNido col-1 h-128 pt-11 mt-0">
