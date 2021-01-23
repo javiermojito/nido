@@ -9,7 +9,7 @@ const Home = () => {
       <div className="header-home w-full h-96 pt-10 pl-7 pr-10 mb-0">
         <div className="">
           <h1 className="font-poppins font-semibold text-4xl tracking-tighter">Cursos gratuitos de diseño</h1>
-          <p className="font-popping text-2xl tracking-tighter">Aprende con recursos digitales a tu alcance</p>
+          <p className="font-popping text-2xl tracking-tighter leading-7">Aprende con recursos digitales a tu alcance</p>
           <br/>
           <Link to="/cursos">
             <div className="w-max h-auto bg-greenNido pl-4 pr-4 pt-2 pb-2 font-semibold font-poppins border-solid border-2 border-black botder-opacity-100">
@@ -34,9 +34,9 @@ const Home = () => {
       {/* //Feature -> Sin conexión// */}
       <div className="w-full flex flex-col col-1 h-128 bg-white pt-10 ">
           <div className="h-6/7 w-full inline-block align-middle">
-            <img className="pl-7 pr-7 w-auto mx-auto" src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png" alt="Feature sin conexión"/>
+            <img className="pl-5 pr-5 w-auto mx-auto" src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png" alt="Feature sin conexión"/>
           </div>
-          <div className="h-full pl-6 pr-6 pb-6 text-black text-center tracking-tight flex flex-col col-1 content-center justify-center ">
+          <div className="h-full pl-6 pr-6 pb-4 text-black text-center tracking-tight flex flex-col col-1 content-center justify-center ">
             <h2 className="font-poppins text-2xl font-semibold leading-6">Úsalos sin conexión a internet</h2>
             <br/>
             <p className="font-roboto text-lg leading-6">Descárgalo en tu computadora con Windows o Linux y úsalos en tu próximo viaje, cafetería favorita, tú decides.</p>
@@ -44,11 +44,11 @@ const Home = () => {
       </div>
 
       {/* //Feature -> Responsive design// */}
-      <div className="w-full flex flex-col col-1 h-128 bg-blueNido pt-10 ">
+      <div className="w-full flex flex-col col-1 h-128 bg-blueNido pt-10 pb-7">
           <div className="h-3/5 w-auto mx-auto inline-block align-middle ">
             <img className="h-full mx-auto" src="https://blush.design/api/download?shareUri=XtWpTVm_Y&s=0.1%7E583318&w=800&h=800&fm=png" alt="Feature Resposive Design"/>
           </div>
-          <div className="h-2/6 pl-6 pr-6 text-white text-center tracking-tight  flex flex-col col-1 content-center justify-center ">
+          <div className="h-2/6 pl-5 pr-5 pt-6 text-white text-center tracking-tight  flex flex-col col-1 content-center justify-center ">
             <h2 className="font-poppins text-2xl font-semibold leading-6">Accede desde cualquier dispositivo</h2>
             <br/>
             <p className="font-roboto text-lg leading-6">No importa si estas en tu celular, computadora o nevera con pantalla. Podrás disfrutar del contenido de nuestros cursos.</p>
