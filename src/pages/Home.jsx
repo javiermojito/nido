@@ -100,13 +100,13 @@ const Home = () => {
             <br />
           </div>    
           <div className="w-1/2 flex flex-wrap content-center justify-end pr-14">
-            <img className="w-72 xxl:w-80" src="https://blush.design/api/download?shareUri=Qh8dZLB1u&s=0%7Ef7d3bb&w=800&h=800&fm=png" alt="Girl sitting in front of computer"/>
+            <img className="w-72 xxl:w-80" src="https://blush.design/api/download?shareUri=Qh8dZLB1u&s=0%7Ef7d3bb&w=800&h=800&fm=png" alt="Feature sin costo"/>
           </div>
         </div>
       </div>
 
       {/* //Feature -> Sin conexión// */}
-      <div className="w-full flex flex-col col-1 h-128 bg-white pt-14">
+      <div className="w-full flex flex-col col-1 h-128 bg-white pt-14 none lg:hidden">
         <div className="h-6/7 w-full inline-block align-middle sm:w-auto sm:h-3/5 ">
           <img
             className="h-full mx-auto"
@@ -123,6 +123,25 @@ const Home = () => {
             Descárgalo en tu computadora con Windows o Linux y úsalos en tu
             próximo viaje, cafetería favorita, tú decides.
           </p>
+        </div>
+      </div>
+
+      {/* // Feature -> Sin conexión Large // */}
+      <div className="h-128 w-full xxl:h-144 hidden lg:block bg-white">
+        <div className="w-full h-full mb-0 flex flex-row gap-x-0 xl:w-3/4 xxl:w-3/5 mx-auto">
+          <div className="w-1/2 pl-10 pr-5 xl:mr-0 xl:pr-10 flex flex-col col-1 justify-center ">
+            <h1 className="font-poppins font-semibold text-4xl text-black tracking-tighter pb-3 ">
+            Úsalos sin conexión a internet
+            </h1>
+            <p className="font-roboto text-2xl text-black tracking-tighter leading-6 lg:pb-2 xl:pb-0">
+            Descárgalo en tu computadora con Windows o Linux y úsalos en tu
+            próximo viaje, cafetería favorita, tú decides.
+            </p>
+            <br />
+          </div>    
+          <div className="w-1/2 flex flex-wrap content-center justify-start">
+            <img className="w-144 xxl:w-180" src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png" alt="Feature sin conexión"/>
+          </div>
         </div>
       </div>
 
