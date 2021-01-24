@@ -38,8 +38,12 @@ const Home = () => {
               Ver Cursos
             </div>
           </Link>
-        </div>    
-        <img className="mr-0 object-contain object-right-bottom w-3/5 h-auto" src="https://i.imgur.com/uPxYhjx.png" alt="Girl sitting in front of computer"/>
+        </div>
+        <img
+          className="mr-0 object-contain object-right-bottom w-3/5 h-auto"
+          src="https://i.imgur.com/uPxYhjx.png"
+          alt="Girl sitting in front of computer"
+        />
       </div>
 
       {/* // Landing Large// */}
@@ -53,19 +57,22 @@ const Home = () => {
               Aprende con recursos digitales a tu alcance
             </p>
             <br />
-            <br className="hidden xl:flex"/>
+            <br className="hidden xl:flex" />
             <Link to="/cursos">
               <div className="w-max h-auto bg-greenNido text-xl pl-4 pr-4 pt-2 pb-2 font-semibold font-poppins border-solid border-2 border-black botder-opacity-100">
                 Ver Cursos
               </div>
             </Link>
-          </div>    
+          </div>
           <div className="w-1/2 flex flex-wrap content-center">
-            <img  className="h-auto w-max mx-auto xxl:w-180" src="https://blush.design/api/download?shareUri=paoNDgE8b&s=0.5%7Ef7d3bb&w=800&h=800&fm=png" alt="Girl sitting in front of computer"/>
+            <img
+              className="h-auto w-max mx-auto xxl:w-180"
+              src="https://blush.design/api/download?shareUri=paoNDgE8b&s=0.5%7Ef7d3bb&w=800&h=800&fm=png"
+              alt="Girl sitting in front of computer"
+            />
           </div>
         </div>
       </div>
-      
 
       {/* // Feature -> sin costo // */}
       <div className="w-full flex flex-col bg-redNido col-1 h-128 pt-11 mt-0 none lg:hidden">
@@ -98,18 +105,22 @@ const Home = () => {
               Aprende con recursos digitales a tu alcance
             </p>
             <br />
-          </div>    
+          </div>
           <div className="w-1/2 flex flex-wrap content-center justify-end pr-14">
-            <img className="w-72 xxl:w-80" src="https://blush.design/api/download?shareUri=Qh8dZLB1u&s=0%7Ef7d3bb&w=800&h=800&fm=png" alt="Feature sin costo"/>
+            <img
+              className="w-72 xxl:w-80"
+              src="https://blush.design/api/download?shareUri=Qh8dZLB1u&s=0%7Ef7d3bb&w=800&h=800&fm=png"
+              alt="Feature sin costo"
+            />
           </div>
         </div>
       </div>
 
       {/* //Feature -> Sin conexión// */}
-      <div className="w-full flex flex-col col-1 h-128 bg-white pt-14 none lg:hidden">
+      <div className="w-full flex flex-col col-1 h-128 bg-white pt-14 lg:hidden">
         <div className="h-6/7 w-full inline-block align-middle sm:w-auto sm:h-3/5 ">
           <img
-            className="h-full mx-auto"
+            className="pl-5 pr-5 w-auto mx-auto sm:h-full"
             src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png"
             alt="Feature sin conexión"
           />
@@ -131,22 +142,26 @@ const Home = () => {
         <div className="w-full h-full mb-0 flex flex-row gap-x-0 xl:w-3/4 xxl:w-3/5 mx-auto">
           <div className="w-1/2 pl-10 pr-5 xl:mr-0 xl:pr-10 flex flex-col col-1 justify-center ">
             <h1 className="font-poppins font-semibold text-4xl text-black tracking-tighter pb-3 ">
-            Úsalos sin conexión a internet
+              Úsalos sin conexión a internet
             </h1>
             <p className="font-roboto text-2xl text-black tracking-tighter leading-6 lg:pb-2 xl:pb-0">
-            Descárgalo en tu computadora con Windows o Linux y úsalos en tu
-            próximo viaje, cafetería favorita, tú decides.
+              Descárgalo en tu computadora con Windows o Linux y úsalos en tu
+              próximo viaje, cafetería favorita, tú decides.
             </p>
             <br />
-          </div>    
+          </div>
           <div className="w-1/2 flex flex-wrap content-center justify-start">
-            <img className="w-144 xxl:w-180" src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png" alt="Feature sin conexión"/>
+            <img
+              className="w-144 xxl:w-180"
+              src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png"
+              alt="Feature sin conexión"
+            />
           </div>
         </div>
       </div>
 
       {/* //Feature -> Responsive design// */}
-      <div className="w-full flex flex-col col-1 h-128 bg-blueNido pt-10 pb-7">
+      <div className="w-full flex flex-col col-1 h-128 bg-blueNido pt-10 pb-7  none lg:hidden">
         <div className="h-3/5 w-auto mx-auto inline-block align-middle ">
           <img
             className="h-full mx-auto"
@@ -163,6 +178,29 @@ const Home = () => {
             No importa si estas en tu celular, computadora o nevera con
             pantalla. Podrás disfrutar del contenido de nuestros cursos.
           </p>
+        </div>
+      </div>
+
+      {/* // Feature -> Responsive Large// */}
+      <div className="h-128 w-full xxl:h-144 hidden lg:block bg-blueNido">
+        <div className="w-full h-full mb-0 flex flex-row flex-row-reverse gap-x-0 xl:w-5/6 xxl:w-3/5 mx-auto">
+          <div className="w-1/2 ml-5 pr-24 xl:pr-24 mr-0 flex flex-col col-1 justify-center ">
+            <h1 className="font-poppins font-semibold text-4xl text-white tracking-tighter pb-3">
+              Accede desde cualquier dispositivo
+            </h1>
+            <p className="font-roboto text-2xl text-white tracking-tighter leading-6 lg:pb-2 xl:pb-0">
+              No importa si estas en tu celular, computadora o nevera con
+              pantalla. Podrás disfrutar del contenido de nuestros cursos.
+            </p>
+            <br />
+          </div>
+          <div className="w-1/2 flex flex-wrap content-center justify-end pr-4 xl:pr-10">
+            <img
+              className="w-96 xxl:w-96"
+              src="https://blush.design/api/download?shareUri=XtWpTVm_Y&s=0.1%7E583318&w=800&h=800&fm=png"
+              alt="Feature Resposive Design"
+            />
+          </div>
         </div>
       </div>
 
