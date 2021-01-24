@@ -68,7 +68,7 @@ const Home = () => {
       
 
       {/* // Feature -> sin costo // */}
-      <div className="w-full flex flex-col bg-redNido col-1 h-128 pt-11 mt-0">
+      <div className="w-full flex flex-col bg-redNido col-1 h-128 pt-11 mt-0 none lg:hidden">
         <div className="h-3/5 w-auto mx-auto inline-block align-middle ">
           <img
             className="h-full"
@@ -77,31 +77,49 @@ const Home = () => {
           />
         </div>
         <div className="h-2/6 pl-6 pr-6 text-white text-center tracking-tight flex flex-col col-1 content-center justify-center">
-          <h2 className="font-poppins text-2xl font-semibold">
+          <h2 className="font-poppins text-2xl sm:text-3xl font-semibold ">
             Sin costo, ni registros
           </h2>
           <br />
-          <p className="font-roboto text-lg leading-6">
+          <p className="font-roboto text-lg sm:text-xl leading-6">
             Aprende algo nuevo sin aceptar planes de dudosa beneficiencia
           </p>
         </div>
       </div>
 
+      {/* // Feature -> sin costo Large// */}
+      <div className="h-128 w-full xxl:h-144 hidden lg:block bg-redNido">
+        <div className="w-full h-full mb-0 flex flex-row flex-row-reverse gap-x-0 xl:w-5/6 mx-auto">
+          <div className="w-1/2 ml-5 pr-0 mr-0 flex flex-col col-1 justify-center ">
+            <h1 className="font-poppins font-semibold text-4xl text-white tracking-tighter pb-3">
+              Sin costo, ni registros
+            </h1>
+            <p className="font-roboto text-2xl text-white tracking-tighter leading-6 lg:pb-2 xl:pb-0">
+              Aprende con recursos digitales a tu alcance
+            </p>
+            <br />
+          </div>    
+          <div className="w-1/2 flex flex-wrap content-center justify-end pr-14">
+            <img className="w-72 xxl:w-80" src="https://blush.design/api/download?shareUri=Qh8dZLB1u&s=0%7Ef7d3bb&w=800&h=800&fm=png" alt="Girl sitting in front of computer"/>
+          </div>
+        </div>
+      </div>
+
       {/* //Feature -> Sin conexión// */}
       <div className="w-full flex flex-col col-1 h-128 bg-white pt-14">
-        <div className="h-6/7 w-full inline-block align-middle">
+        <div className="h-6/7 w-full inline-block align-middle sm:w-auto sm:h-3/5 ">
           <img
-            className="pl-5 pr-5 w-auto mx-auto"
+            className="h-full mx-auto"
             src="https://blush.design/api/download?shareUri=aPwzY7odD&s=0.2%7E8d574d&w=800&h=800&fm=png"
             alt="Feature sin conexión"
           />
         </div>
         <div className="h-full pl-6 pr-6 pb-4 text-black text-center tracking-tight flex flex-col col-1 content-center justify-center ">
-          <h2 className="font-poppins text-2xl font-semibold leading-6">
+          <h2 className="font-poppins text-2xl sm:text-3xl font-semibold leading-6">
             Úsalos sin conexión a internet
           </h2>
           <br />
-          <p className="font-roboto text-lg leading-6">
+          <p className="font-roboto text-lg leading-6 sm:text-xl sm:pl-5 sm:pr-5">
             Descárgalo en tu computadora con Windows o Linux y úsalos en tu
             próximo viaje, cafetería favorita, tú decides.
           </p>
@@ -118,11 +136,11 @@ const Home = () => {
           />
         </div>
         <div className="h-2/6 pl-5 pr-5 pt-6 text-white text-center tracking-tight  flex flex-col col-1 content-center justify-center ">
-          <h2 className="font-poppins text-2xl font-semibold leading-6">
+          <h2 className="font-poppins text-2xl sm:text-3xl font-semibold leading-6">
             Accede desde cualquier dispositivo
           </h2>
           <br />
-          <p className="font-roboto text-lg leading-6">
+          <p className="font-roboto text-lg sm:text-xl leading-6">
             No importa si estas en tu celular, computadora o nevera con
             pantalla. Podrás disfrutar del contenido de nuestros cursos.
           </p>
