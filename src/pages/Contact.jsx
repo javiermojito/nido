@@ -66,7 +66,7 @@ const Contact = () => {
 
             {/* Twitter */}
             <a
-              href="https://twitter.com/cursosnido"
+              href="https://twitter.com/Nido69235106"
               target="_blank"
               rel="noopener noreferrer"
             >
