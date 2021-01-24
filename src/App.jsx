@@ -4,6 +4,7 @@ import { Switch, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Course from "./pages/Course";
 import Courses from "./pages/Courses";
+import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
 
@@ -18,6 +19,7 @@ class App extends React.Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/cursos" component={Courses} />
             <Route path ="/cursos" component={Course}/>
+            <Route exact path ="/contacto" component={Contact}/>
             <Route component={NotFound} />
           </Switch>
         </Layout>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="w-full bg-white mx-auto p-2 font-poppins shadow-sm">
+    <div className="w-full bg-white mx-auto p-2 font-poppins font-regular shadow-sm">
       <nav className="flex justify-between">
         <Link to="/"> <img className="w-1/7 h-12 ml-4" src="https://i.imgur.com/v3hO1M0.png"alt="nido logo"/> </Link>
         <div className="h-full my-auto">

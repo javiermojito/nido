@@ -8,7 +8,17 @@ module.exports = {
       'redNido': '#E57B7B',
       'purpleNido': '#6B406F',
       'blueNido': '#5975AB',
+      'whiteNido': '#F4F4F4'
     }),
+
+    textColor: {
+      'greenNido': '#A0D762',
+      'redNido': '#E57B7B',
+      'purpleNido': '#6B406F',
+      'blueNido': '#5975AB',
+      'white': '#FFF',
+      'gray': '#707070'
+    },
 
     screens: {
       sm: "640px",

@@ -14,7 +14,7 @@ const Badge = (props) => {
 
   return (
     <div
-      className="cursor-pointer flex flex-row rounded-xl h-28 sm:h-40 min-h-0 bg-white shadow-md transition duration-400 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+      className="cursor-pointer flex flex-row rounded-xl h-28 sm:h-40 min-h-0 bg-white shadow-sm transition duration-400 ease-in-out transform hover:-translate-y-1 hover:shadow-md"
       onClick={handleClick}
     >
       <div
@@ -35,7 +35,7 @@ const Badge = (props) => {
             </div>
             <div className="description hidden sm:inline w-full h-12">
               <div>
-                <p className="text-gray-500">{props.description}</p>
+                <p className="text-gray">{props.description}</p>
               </div>
             </div>
           </div>
