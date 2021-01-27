@@ -206,7 +206,7 @@ const Home = () => {
 
       {/* // CTA //*/}
       <div className="bg-purpleNido">
-        <div className="flex flex-wrap content-center justify-center bg-purpleNido gap-y-8 pt-16 pb-6 mx-auto sm:flex-col sm:col-1 sm:w-128">
+        <div className="flex flex-wrap content-center justify-center bg-purpleNido pb-2 gap-y-6 pt-14 mx-auto sm:flex-col sm:col-1 sm:w-128">
           <h2 className="font-poppins text-white text-2xl font-semibold text-center sm:text-3xl lg:text-4xl">
             Vive la experiencia de los Objetos Virtuales de Aprendizaje
           </h2>
@@ -216,15 +216,14 @@ const Home = () => {
             </div>
           </Link>
         </div>
-      </div>
-
-      {/* //CTA image// */}
-      <div className="bg-purpleNido h-36 mb-32 content-start  flex flex-wrap content-start justify-center">
-        <img
-          className="h-64"
-          src="https://blush.design/api/download?shareUri=WXOD80qqd&s=0%7E8d574d&w=800&h=800&fm=png"
-          alt="Peace sign"
-        />
+        {/* //CTA image// */}
+        <div className="bg-purpleNido h-36 mt-0 mb-32 content-start flex flex-wrap content-start justify-center">
+          <img
+            className="h-64"
+            src="https://blush.design/api/download?shareUri=WXOD80qqd&s=0%7E8d574d&w=800&h=800&fm=png"
+            alt="Peace sign"
+          />
+        </div>
       </div>
     </div>
   );
