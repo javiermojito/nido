@@ -18,7 +18,7 @@ const Badge = (props) => {
       onClick={handleClick}
     >
       <div
-        className=" flex flex-wrap content-center rounded-l-xl w-1/3"
+        className="flex flex-wrap content-center rounded-l-xl w-1/3"
         style={props.backgroundStyle}
       >
         <img
