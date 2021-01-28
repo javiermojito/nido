@@ -19,7 +19,7 @@ const Footer = () => {
           <h4 className="font-bold text-xl pb-2">Navegación</h4>
           <div className="flex flex-row">
             <div className="pr-2">
-              <img src="https://i.imgur.com/a8WYDEC.png" alt="" />
+              <img className="w-" src="https://i.imgur.com/a8WYDEC.png" alt="" />
             </div>
             <div className="flex flex-col justify-center content-center">
               <ul className="font-semibold flex flex-col justify-center content-center gap-y-2">

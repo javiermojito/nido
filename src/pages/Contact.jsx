@@ -55,7 +55,7 @@ const Contact = () => {
           <h3 className="font-poppins font-bold text-2xl pb-2">
             Sigue a Nido en
           </h3>
-          <div className="flex flex-row gap-x-1 justify-center content-center">
+          <div className="flex flex-row gap-x-1 justify-center content-center pb-4">
             {/* Instagram */}
             <a
               href="https://instagram.com/cursos.nido"
