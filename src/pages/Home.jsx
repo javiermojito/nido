@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "./css/Home.css";
 
 const Home = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
   return (
     <div>
       {/* // Landing // */}

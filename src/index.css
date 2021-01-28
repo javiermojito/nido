@@ -12,6 +12,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f4f4f4;
+
+}
+
+html,
+body,
+div > #root,
+#root {
+  height: 100%;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
 }
 
 code {

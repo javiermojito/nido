@@ -4,6 +4,10 @@ import { usePurpleBody } from "../hooks/usePurpleBody";
 
 const Contact = () => {
   usePurpleBody();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
   return (
     <div className="h-full bg-purpleNido pb-32">
       <div className="bg-whiteNido pt-10">

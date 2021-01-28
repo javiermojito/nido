@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white font-poppins pt-10 pb-10 pl-4 pr-4 flex flex-row">
+    <div className="bg-grayNido text-white font-poppins pt-10 pb-10 pl-4 pr-4 flex flex-row">
       {/* Logo */}
       <div className="w-1/2 flex flex-wrap justify-center content-center pr-4">
         <img

@@ -22,7 +22,7 @@ const Badge = (props) => {
         style={props.backgroundStyle}
       >
         <img
-          className="h-20 sm:h-28 inline-block align-middle mx-auto"
+          className="h-20 sm:h-28 xxl:h-30 w-auto inline-block align-middle mx-auto"
           src={props.image}
           alt={props.imageAlt}
         />
