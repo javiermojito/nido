@@ -5,7 +5,10 @@ import {getCourses} from "../data";
 
 const Courses = (props) => {
   var data = getCourses();
-
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
   return (
     <div className=" h-auto pb-36 xl:h-screen/70v xl:pb-0">
       <div className="text-5xl font-bold text-center mt-20 sm:ml-20 sm:text-left">Cursos</div>

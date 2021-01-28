@@ -8,8 +8,9 @@ const Contact = () => {
     top: 0,
     behavior: 'smooth',
   })
+
   return (
-    <div className="h-full bg-purpleNido pb-32">
+    <div className="mb-32">
       <div className="bg-whiteNido pt-10">
         {/* Person */}
         <div className="flex flex-col w-full h-auto text-center pb-8 tracking-tighter">
@@ -94,15 +95,14 @@ const Contact = () => {
               />
             </a>
           </div>
-        </div>
-
-        {/* Image */}
-        <div className="h-36 content-start flex flex-wrap content-start justify-center">
-          <img
-            className="h-64"
-            src="https://blush.design/api/download?shareUri=RDN0HFZdQ&s=0%7Ef7d3bb&w=800&h=800&fm=png"
-            alt="Person coding"
-          />
+          {/* Image */}
+          <div className="h-36 content-start flex flex-wrap content-start justify-center">
+            <img
+              className="h-64"
+              src="https://blush.design/api/download?shareUri=RDN0HFZdQ&s=0%7Ef7d3bb&w=800&h=800&fm=png"
+              alt="Person coding"
+            />
+          </div>
         </div>
       </div>
     </div>
