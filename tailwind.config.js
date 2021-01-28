@@ -49,7 +49,7 @@ module.exports = {
     },
     extend: {
       height: (theme) => ({
-        "screen/90v": "60vh",
+        "screen/60v": "60vh",
         "screen/70v": "70vh",
         "screen/80v": "80vh",
         "screen/90v": "90vh",
@@ -63,6 +63,10 @@ module.exports = {
         "180": "45rem",
       }),
       width: (theme) => ({
+        "screen/60v": "60vh",
+        "screen/70v": "70vh",
+        "screen/80v": "80vh",
+        "screen/90v": "90vh",
         "screen/2": "50vh",
         "screen/3": "calc(100vh / 3)",
         "screen/4": "calc(100vh / 4)",
