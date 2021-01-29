@@ -7,7 +7,7 @@ import Courses from "./pages/Courses";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
-import Metadata from "./components/Metadata";
+import MetadataXML from "./components/MetadataXML";
 
 
 class App extends React.Component {
@@ -21,7 +21,7 @@ class App extends React.Component {
             <Route exact path="/cursos" component={Courses} />
             <Route path ="/cursos" component={Course}/>
             <Route exact path ="/contacto" component={Contact}/>
-            <Route exact path ="/metadata" component={Metadata}/>
+            <Route exact path ="/metadata" component={MetadataXML}/>
             <Route component={NotFound} />
           </Switch>
         </Layout>

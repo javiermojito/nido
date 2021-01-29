@@ -3,8 +3,8 @@ import React from "react";
 
 const Metadata = (props) => {
   return (
-    <div className="w-full bg-gray-100">
-      <div className="font-poppins text-4xl font-bold text-center pt-12">Metadata</div>
+    <div className="w-full bg-gray-100 whitespace-pre-line	">
+      <div className="font-poppins text-4xl font-bold text-center pt-12">Metadata (Tablas)</div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 justify-center content-center pt-12 sm:p-12 w-10/12	 mx-auto ">
         {/* General */}
         <div class="bg-white shadow overflow-hidden rounded-lg">
@@ -26,7 +26,7 @@ const Metadata = (props) => {
                   Idioma
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Español
+                  {props.metadata.general.language}
                 </dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -67,13 +67,13 @@ const Metadata = (props) => {
                   Autor(es)
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Javier Andrés Collazos Gómez
+                  {props.metadata.lifecycle.author}
                 </dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Entidad</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Universidad de Ibagué
+                  {props.metadata.lifecycle.entity}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -100,7 +100,7 @@ const Metadata = (props) => {
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Formato</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  iFrame, .zip
+                  {props.metadata.technical.format}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -113,8 +113,8 @@ const Metadata = (props) => {
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Ubicación</dt>
-                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  <a className="text-blueNido" href={props.metadata.technical.location}>{props.metadata.technical.location}</a>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">
+                  <a className="text-blueNido overflow-clip pr-2" href={props.metadata.technical.location}>{props.metadata.technical.location}</a>
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -122,27 +122,20 @@ const Metadata = (props) => {
                   Requerimientos
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  <ul>
-                    <li>- Tipo: <i>Navegador</i></li>
-                    <li>- Nombre: <i>Cualquiera</i></li>
-                  </ul>
+                  {props.metadata.technical.requirement}
                 </dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Instrucciones de instalación</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  <ul>
-                    <li>Online: acceder a la ruta desde un navegador web.</li>
-                    <br/>
-                    <li>Offline: Descomprimir el archivo .zip con su software de preferencia. Ejecutar el archivo con el nombre y simbolo del recurso.</li>
-                  </ul>
+                {props.metadata.technical.instructions}
                 </dd>
               </div>
             </dl>
           </div>
         </div>
 
-        {/* educacional */}
+        {/* Educacional */}
         <div class="bg-white shadow overflow-hidden rounded-lg">
           <div class="px-4 py-5 sm:px-6">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
@@ -154,7 +147,7 @@ const Metadata = (props) => {
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Tipo de interactividad</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Activo
+                {props.metadata.educational.interactivityType}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -162,13 +155,13 @@ const Metadata = (props) => {
                   Tipo de recurso de aprendizaje
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Diapositiva
+                {props.metadata.educational.learningResourceType}
                 </dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Nivel de interactividad</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Medio
+                {props.metadata.educational.interactivityLevel}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -176,20 +169,20 @@ const Metadata = (props) => {
                   Población objetivo
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Aprendiz de 16-40 años
+                {props.metadata.educational.targetPopulation}
                 </dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Contexto de aprendizaje</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Educación Secundaria, Educación Superior
+                {props.metadata.educational.context}
                 </dd>
               </div>
             </dl>
           </div>
         </div>
 
-        {/* derechos */}
+        {/* Derechos */}
         <div class="bg-white shadow overflow-hidden rounded-lg">
           <div class="px-4 py-5 sm:px-6">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
@@ -201,7 +194,7 @@ const Metadata = (props) => {
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Costo</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  No
+                {props.metadata.rights.cost}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -209,8 +202,7 @@ const Metadata = (props) => {
                   Derechos de autor
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Se permite su distribución libre y se prohíbe su uso
-                  comercial.
+                {props.metadata.rights.copyright}
                 </dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -218,8 +210,7 @@ const Metadata = (props) => {
                   Otras restricciones
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Este recurso utiliza material de terceros como objetos de
-                  estudio.
+                {props.metadata.rights.otherRestrictions}
                 </dd>
               </div>
             </dl>
@@ -238,10 +229,7 @@ const Metadata = (props) => {
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Uso educativo</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  {`Este recurso puede ser utilizado por docentes, estudiantes y
-                cualquier usuario interesado en ${props.metadata.annotation.educationalUse}. Sirve de material
-                complementario para cursos relacionados al desarrollo de
-                aplicaciones y la ingeniería de software.`}
+                  {props.metadata.annotation.educationalUse}
                 </dd>
               </div>
             </dl>
@@ -262,11 +250,7 @@ const Metadata = (props) => {
                   Fuente de Clasificación
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  Disciplina:
-                  <ul>
-                    <li>- Diseño</li>
-                    <li>- Ingeniería de software</li>
-                  </ul>
+                  {props.metadata.classification.source}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -274,7 +258,7 @@ const Metadata = (props) => {
                   Ruta taxonómica
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  TBD
+                  {props.metadata.classification.taxonPath}
                 </dd>
               </div>
             </dl>

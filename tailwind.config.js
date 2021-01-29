@@ -9,7 +9,8 @@ module.exports = {
       'purpleNido': '#6B406F',
       'blueNido': '#5975AB',
       'whiteNido': '#F4F4F4',
-      'grayNido': '#3C3C3C'
+      'grayNido': '#3C3C3C',
+      'consoleNido': "#252525",
     }),
 
     textColor: {
@@ -34,6 +35,7 @@ module.exports = {
       display: ["Roboto"],
       body: ["Roboto"],
       poppins: ["Poppins"],
+      console: ["Overpass Mono"]
     },
     filter: {
       // defaults to {}
