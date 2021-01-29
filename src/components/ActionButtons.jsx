@@ -2,8 +2,8 @@ import React from "react";
 
 const ActionButtons = (props) => {
   return (
-    <div className="flex flex-wrap justify-center mt-5 mb-5">
-      <div className="w-4/5 sm:w-2/3 h-auto flex-wrap grid grid-cols-1 gap-y-3 gap-x-3 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="flex flex-wrap justify-center mt-5 mb-14">
+      <div className="w-4/5 sm:w-2/3 h-auto flex-wrap grid grid-cols-1 gap-y-3 gap-x-3 lg:grid-cols-4">
         {/* VERSION A */}
         {/* <div className="w-full h-14 rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-sm flex flex-wrap justify-center">
           <div className="w-1/2 flex items-center">

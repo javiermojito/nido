@@ -3,9 +3,9 @@ import React from "react";
 
 const Metadata = () => {
   return (
-    <div className="w-full">
-      <div className="font-poppins text-4xl font-bold text-center pt-12">Metadatos</div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 justify-center content-center p-12 w-10/12	 mx-auto">
+    <div className="w-full bg-gray-100">
+      <div className="font-poppins text-4xl font-bold text-center pt-12">Metadata</div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 justify-center content-center pt-12 sm:p-12 w-10/12	 mx-auto ">
         {/* General */}
         <div class="bg-white shadow overflow-hidden rounded-lg">
           <div class="px-4 py-5 sm:px-6">

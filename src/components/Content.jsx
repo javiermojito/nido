@@ -1,35 +1,15 @@
 import React from "react";
 import EmbedComponent from "./EmbedComponent";
-import ActionButtons from "./ActionButtons";
+
 import Badge from "./Badge";
-import { faBook, faTasks, faClock } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getCourseFromId } from "../data";
 
 const Content = (props) => {
   return (
     <React.Fragment>
-      <div className="flex flex-wrap justify-center pt-5 pb-5 bg-white shadow-sm">
-        <div className="w-2/3">
-          <div className="text-black font-medium text-lg pb-4 text-center sm:text-left lg:text-xl">
-            Objeto Virtual de Aprendizaje
-          </div>
-          <div className="flex flex-row gap-x-5 justify-center text-center sm:justify-start">
-            <div>
-              <FontAwesomeIcon icon={faBook} /> {props.numUnits} Unidades
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faTasks} /> {props.numSubjects} temas
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faClock} /> {props.duration} minutos
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mt-0 mb-0 lg:mt-10 lg:mb-10">
-        <div className="flex flex-wrap justify-center mt-5 mb-5">
-          <div className="w-4/5 sm:w-2/3 h-64 lg:h-180">
+      <div className="mt-4 mb-0 lg:mt-4 lg:mb-10">
+        <div className="flex flex-wrap justify-center mb-4">
+          <div className="w-4/5 sm:w-2/3 h-64 lg:h-180 ">
             <a
               className="lg:hidden cursor-pointer"
               href={props.linkFrame}
@@ -43,12 +23,11 @@ const Content = (props) => {
                 />
               </div>
             </a>
-            <div className="w-full h-full hidden lg:inline">
+            <div className="w-full h-full hidden lg:inline mt-0">
               <EmbedComponent iframe={props.frame} />
             </div>
           </div>
         </div>
-        <ActionButtons {...props}/>
       </div>
     </React.Fragment>
   );
