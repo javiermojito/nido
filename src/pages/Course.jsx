@@ -16,7 +16,7 @@ class Course extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: true,
+      showModal: false,
       showTable: true,
       showXML: false,
     };
