@@ -1,7 +1,7 @@
 import { faHospitalAlt } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-const Metadata = () => {
+const Metadata = (props) => {
   return (
     <div className="w-full bg-gray-100">
       <div className="font-poppins text-4xl font-bold text-center pt-12">Metadata</div>
@@ -18,7 +18,7 @@ const Metadata = () => {
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Título</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  {"PENDIENTE"}
+                  {props.metadata.general.title}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -32,7 +32,7 @@ const Metadata = () => {
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Descripción</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  {"PENDIENTE"}
+                  {props.metadata.general.description}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -40,7 +40,7 @@ const Metadata = () => {
                   Palabras clave
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  {"PENDIENTE"}
+                  {props.metadata.general.keywords}
                 </dd>
               </div>              
             </dl>
@@ -59,7 +59,7 @@ const Metadata = () => {
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Versión</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  {"PENDIENTE"}
+                  {props.metadata.lifecycle.version}
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -81,7 +81,7 @@ const Metadata = () => {
                   Fecha
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  {"PENDIENTE"}
+                  {props.metadata.lifecycle.date}
                 </dd>
               </div>
             </dl>
@@ -108,13 +108,13 @@ const Metadata = () => {
                   Tamaño
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  {"PENDIENTE"}
+                  {props.metadata.technical.size}
                 </dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Ubicación</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  <a className="text-blueNido" href={"pendiente"}>{"PENDIENTE"}</a>
+                  <a className="text-blueNido" href={props.metadata.technical.location}>{props.metadata.technical.location}</a>
                 </dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -133,6 +133,7 @@ const Metadata = () => {
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                   <ul>
                     <li>Online: acceder a la ruta desde un navegador web.</li>
+                    <br/>
                     <li>Offline: Descomprimir el archivo .zip con su software de preferencia. Ejecutar el archivo con el nombre y simbolo del recurso.</li>
                   </ul>
                 </dd>
@@ -238,7 +239,7 @@ const Metadata = () => {
                 <dt class="text-sm font-medium text-gray-500">Uso educativo</dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                   {`Este recurso puede ser utilizado por docentes, estudiantes y
-                cualquier usuario interesado en ${"ARREGLAR"}. Sirve de material
+                cualquier usuario interesado en ${props.metadata.annotation.educationalUse}. Sirve de material
                 complementario para cursos relacionados al desarrollo de
                 aplicaciones y la ingeniería de software.`}
                 </dd>

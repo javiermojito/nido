@@ -67,7 +67,7 @@ class Course extends React.Component {
                 </button>
               </div>
               <div className="w-full ">
-                <Metadata />
+                <Metadata {...this.course} />
               </div>
             </ReactModal> 
           </div>

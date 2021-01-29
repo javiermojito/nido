@@ -20,6 +20,24 @@ var data = [
     linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
     linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
     upNext: 1,
+    metadata: {
+      general:{
+        title: "Introducción al diseño",
+        description: "LOREM IPSUM",
+        keywords: "LOREM, IPSUM"
+      },
+      lifecycle:{
+        version: "1.0",
+        date: "09/09/09",
+      },
+      technical:{
+        size: "99999MB",
+        location: "https://javiermojito.github.io/nido/cursos/introduccion-diseño"
+      },
+      annotation:{
+        educationalUse: "diseño"
+      }
+    }
   },
   {
     id: 1,
@@ -42,6 +60,24 @@ var data = [
     linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
     linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
     upNext: 2,
+    metadata: {
+      general:{
+        title: "Teoría del color",
+        description: "LOREM IPSUM",
+        keywords: "LOREM, IPSUM"
+      },
+      lifecycle:{
+        version: "1.0",
+        date: "09/09/09",
+      },
+      technical:{
+        size: "99999MB",
+        location: "https://javiermojito.github.io/nido/cursos/teoria-color"
+      },
+      annotation:{
+        educationalUse: "la teoría y manejo del color"
+      }
+    }
   },
   {
     id: 2,
@@ -64,6 +100,24 @@ var data = [
     linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
     linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
     upNext: 3,
+    metadata: {
+      general:{
+        title: "Diseño UX",
+        description: "LOREM IPSUM",
+        keywords: "LOREM, IPSUM"
+      },
+      lifecycle:{
+        version: "1.0",
+        date: "09/09/09",
+      },
+      technical:{
+        size: "99999MB",
+        location: "https://javiermojito.github.io/nido/cursos/diseno-ui"
+      },
+      annotation:{
+        educationalUse: "diseño de experiencia de usuario"
+      }
+    }
   },
   {
     id: 3,
@@ -86,6 +140,24 @@ var data = [
     linkDownload: "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
     linkFrame: "https://iseazy.com/dl/1e130595a01a452197e919c2db8bb5b8",
     upNext: 0,
+    metadata: {
+      general:{
+        title: "Diseño UI/UX",
+        description: "LOREM IPSUM",
+        keywords: "LOREM, IPSUM"
+      },
+      lifecycle:{
+        version: "1.0",
+        date: "09/09/09",
+      },
+      technical:{
+        size: "99999MB",
+        location: "https://javiermojito.github.io/nido/cursos/diseno-uiux"
+      },
+      annotation:{
+        educationalUse: "diseño UI/UX"
+      }
+    }
   },
 ];
 
