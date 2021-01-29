@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import ReactModal from "react-modal";
 
 import CourseBanner from "../components/CourseBanner";
@@ -68,10 +67,11 @@ class Course extends React.Component {
             >
               Ver Metadata
             </button>
-            <ReactModal className="absolute top-2 left-2 right-2 botton-2 md:inset-8 outline-none"
+            <ReactModal
               isOpen={this.state.showModal}
               contentLabel="onRequestClose Example"
               onRequestClose={this.handleCloseModal}
+              style={{ content: { padding: 0 } }}
             >
               <div className="w-full flex flex-wrap bg-gray-100 pr-5 shadow-md justify-between content-center">
                 <div className="flex flex-row">
@@ -97,7 +97,7 @@ class Course extends React.Component {
                   <FontAwesomeIcon icon={faTimes} color="gray" />
                 </button>
               </div>
-              <div className="w-full ">
+              <div className="w-full">
                 {this.state.showTable && <Metadata {...this.course} />}
                 {this.state.showXML && <MetadataXML {...this.course} />}
               </div>
