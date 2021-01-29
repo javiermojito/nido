@@ -9,13 +9,18 @@ import Content from "../components/Content";
 import UpNext from "../components/UpNext";
 import { getCourseFromId, getCourseFromPath } from "../data";
 import Metadata from "../components/Metadata";
+import MetadataXML from "../components/MetadataXML";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Course extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showModal: false };
+    this.state = {
+      showModal: true,
+      showTable: true,
+      showXML: false,
+    };
     var path = props.location.pathname;
     getCourseFromPath(path);
     this.course = getCourseFromPath(path);
@@ -23,6 +28,8 @@ class Course extends React.Component {
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.handleShowLeftPanel = this.handleShowLeftPanel.bind(this);
+    this.handleShowRightPanel = this.handleShowRightPanel.bind(this);
   }
 
   handleOpenModal() {
@@ -31,6 +38,14 @@ class Course extends React.Component {
 
   handleCloseModal() {
     this.setState({ showModal: false });
+  }
+
+  handleShowLeftPanel() {
+    this.setState({ showTable: true, showXML: false });
+  }
+
+  handleShowRightPanel() {
+    this.setState({ showTable: false, showXML: true });
   }
 
   componentDidMount() {
@@ -53,23 +68,40 @@ class Course extends React.Component {
             >
               Ver Metadata
             </button>
-            <ReactModal
+            <ReactModal className="absolute top-2 left-2 right-2 botton-2 md:inset-8 outline-none"
               isOpen={this.state.showModal}
               contentLabel="onRequestClose Example"
               onRequestClose={this.handleCloseModal}
             >
-              <div className="w-full flex flex-wrap content-end justify-end bg-gray-100 pr-5 pt-3">
+              <div className="w-full flex flex-wrap bg-gray-100 pr-5 shadow-md justify-between content-center">
+                <div className="flex flex-row">
+                  <button
+                    className="text-left text-sm border-2 h-full w-auto pt-2 pb-2 pl-4 pr-4 text-center font-poppins font-medium text-black hover:bg-gray-50	rounded-sm bg-white focus:bg-blue-100  focus:outline-none	"
+                    onClick={this.handleShowLeftPanel}
+                  >
+                    Tablas
+                  </button>
+
+                  <button
+                    className="text-left text-sm border-2 h-full w-auto pt-2 pb-2 pl-4 pr-4 text-center font-poppins font-medium text-black hover:bg-gray-50 rounded-sm bg-white focus:bg-blue-100 focus:outline-none border-l-0 "
+                    onClick={this.handleShowRightPanel}
+                  >
+                    XML
+                  </button>
+                </div>
+
                 <button
-                  className="text-left text-3xl"
+                  className="text-left text-3xl "
                   onClick={this.handleCloseModal}
                 >
-                  <FontAwesomeIcon icon={faTimes} color="gray"/>
+                  <FontAwesomeIcon icon={faTimes} color="gray" />
                 </button>
               </div>
               <div className="w-full ">
-                <Metadata {...this.course} />
+                {this.state.showTable && <Metadata {...this.course} />}
+                {this.state.showXML && <MetadataXML {...this.course} />}
               </div>
-            </ReactModal> 
+            </ReactModal>
           </div>
         </div>
         <Content {...this.course} />

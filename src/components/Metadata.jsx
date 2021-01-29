@@ -3,7 +3,7 @@ import React from "react";
 
 const Metadata = (props) => {
   return (
-    <div className="w-full bg-gray-100 whitespace-pre-line pb-10 lg:pb-0">
+    <div className="w-full bg-gray-50 whitespace-pre-line pb-10 lg:pb-0">
       <div className="font-poppins text-4xl font-bold text-center pt-12">Metadata (Tablas)</div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 justify-center content-center pt-12 sm:p-12 w-10/12	 mx-auto ">
         {/* General */}
