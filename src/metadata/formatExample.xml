@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<lom:lom>
+  <!-- general -->
+  <lom:general>    
+    <lom:title>
+      <lom:langstring xml:lang="es">#################</lom:langstring>
+    </lom:title>
+    <lom:language>###########</lom:language>
+    <lom:description>
+      <lom:langstring xml:lang="es">###################</lom:langstring>
+    </lom:description>
+    <lom:keywords>
+      <lom:langstring xml:lang="es">################</lom:langstring>
+    </lom:keywords>
+  </lom:general>
+
+  <!-- ciclo de vida -->
+  <lom:lifecycle>
+    <lom:version>
+      <lom:langstring xml:lang="es">########</lom:langstring>
+    </lom:version>
+    <lom:contribute>
+      <lom:role>        
+        <lom:value>
+          <lom:langstring xml:lang="en">content provider</lom:langstring>
+        </lom:value>
+      </lom:role>
+      <lom:centity>
+        <lom:vcard>
+                     begin:vcard
+                     fn:#########
+                     end:vcard
+               </lom:vcard>
+      </lom:centity>
+      <lom:date>
+        <lom:datetime>###########</lom:datetime>
+      </lom:date>
+    </lom:contribute>
+    <lom:entity>
+      <lom:langstring xml:lang="es">########</lom:langstring>
+    </lom:entity>
+  </lom:lifecycle>
+
+  <!-- Técnico -->
+  <lom:technical>
+    <lom:format>########</lom:format>
+    <lom:size>#####</lom:size>
+    <lom:location>#####</lom:location>
+    <lom:requirement>
+      <lom:type>
+        <lom:value>
+          <lom:langstring xml:lang="es">#####</lom:langstring>
+        </lom:value>
+      </lom:type>
+    </lom:requirement>
+    <lom:installationremarks>
+      <lom:langstring xml:lang="es">#####</lom:langstring>
+    </lom:installationremarks>
+  </lom:technical>
+
+  <!-- Educacional -->
+  <lom:educational>
+    <lom:interactivitytype>
+      <lom:value>
+        <lom:langstring xml:lang="es">#####</lom:langstring>
+      </lom:value>
+    </lom:interactivitytype>
+    <lom:learningresourcetype>
+      <lom:value>
+        <lom:langstring xml:lang="es">####</lom:langstring>
+      </lom:value>
+    </lom:learningresourcetype>
+    <lom:interactivitylevel>
+      <lom:value>
+        <lom:langstring xml:lang="es">####</lom:langstring>
+      </lom:value>
+    </lom:interactivitylevel>
+    <lom:intendedenduserrole>
+      <lom:value>
+        <lom:langstring xml:lang="es">#####</lom:langstring>
+      </lom:value>
+    </lom:intendedenduserrole>
+    <lom:context>      
+      <lom:value>
+        <lom:langstring xml:lang="es">#####</lom:langstring>
+      </lom:value>
+    </lom:context>
+  </lom:educational>
+
+  <!-- Derechos -->
+  <lom:rights>
+    <lom:cost>
+      <lom:value>
+        <lom:langstring xml:lang="es">###</lom:langstring>
+      </lom:value>
+    </lom:cost>
+    <lom:copyrightandotherrestrictions>
+      <lom:value>
+        <lom:langstring xml:lang="es">#####</lom:langstring>
+      </lom:value>
+    </lom:copyrightandotherrestrictions>
+    <lom:description>
+      <lom:langstring xml:lang="es">#####</lom:langstring>
+    </lom:description>
+  </lom:rights>
+
+  <!-- Anotaci[on -->
+  <lom:annotation>
+    <lom:educationaluse>
+      <lom:value>
+        <lom:langstring xml:lang="es">###</lom:langstring>
+      </lom:value>
+    </lom:educationaluse>
+  </lom:annotation>
+
+  <!-- Clasificacion -->
+  <lom:classification>
+    <lom:purpose>
+      <lom:value>
+        <lom:langstring xml:lang="es">######</lom:langstring>
+      </lom:value>
+    </lom:purpose>
+    <lom:taxonpath>
+      <lom:source>
+        <lom:langstring xml:lang="es">#### same</lom:langstring>
+      </lom:source>
+      <lom:taxon>
+        <lom:id xml:lang="es">### same</lom:id>
+      </lom:taxon>
+    </lom:taxonpath>
+  </lom:classification>
+</lom:lom>   

@@ -38,7 +38,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999MB",
+        size: "99999",
         location:
           "https://javiermojito.github.io/nido/#/cursos/introduccion-diseño",
         requirement: `- Tipo: Navegador 
@@ -109,7 +109,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999MB",
+        size: "99999",
         location: "https://javiermojito.github.io/nido/#/cursos/teoria-color",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
@@ -167,6 +167,7 @@ var data = [
     metadata: {
       general: {
         title: "Diseño UX",
+        language: "Español",
         description: "LOREM IPSUM",
         keywords: "LOREM, IPSUM",
       },
@@ -178,7 +179,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999MB",
+        size: "99999",
         location: "https://javiermojito.github.io/nido/#/cursos/diseno-ui",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
@@ -248,7 +249,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999MB",
+        size: "99999",
         location: "https://javiermojito.github.io/nido/#/cursos/diseno-uiux",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
@@ -304,473 +305,136 @@ export function getCourseFromId(id) {
 export function getMetadataXMLFromCourseId(id) {
   let course = getCourseFromId(id);
   var xml = `<?xml version="1.0"?>
-<lom:lom>
-  <!-- general -->
-  <lom:general>
-    <lom:identifier>Fig00089</lom:identifier>
-    <lom:title>
-      <lom:langstring>Función de densidad de probabilidad Normal</lom:langstring>
-    </lom:title>
-    <lom:catalogentry>
-      <lom:catalog>imágenes</lom:catalog>
-      <lom:entry>
-        <lom:langstring>Fig00089</lom:langstring>
-      </lom:entry>
-    </lom:catalogentry>
-    <lom:language>es</lom:language>
-    <lom:description>
-      <lom:langstring>Gráfico de la función de densidad de probabilidad
-                             de una normal.</lom:langstring>
-    </lom:description>
-    <lom:keyword>
-      <lom:langstring>probabilidad</lom:langstring>
-    </lom:keyword>
-    <lom:keyword>
-      <lom:langstring>estadística</lom:langstring>
-    </lom:keyword>
-    <lom:keyword>
-      <lom:langstring>función de densidad</lom:langstring>
-    </lom:keyword>
-    <lom:keyword>
-      <lom:langstring>normal</lom:langstring>
-    </lom:keyword>
-    <lom:keyword>
-      <lom:langstring>campana de gauss</lom:langstring>
-    </lom:keyword>
-    <lom:coverage>
-      <lom:langstring>1823</lom:langstring>
-    </lom:coverage>
-    <lom:structure>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">atomic</lom:langstring>
-      </lom:value>
-    </lom:structure>
-    <lom:aggregationlevel>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring>1</lom:langstring>
-      </lom:value>
-    </lom:aggregationlevel>
-  </lom:general>
-
-  <!-- ciclo de vida -->
-  <lom:lifecycle>
-    <lom:version>
-      <lom:langstring>3.0</lom:langstring>
-    </lom:version>
-    <lom:status>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">final</lom:langstring>
-      </lom:value>
-    </lom:status>
-    <lom:contribute>
-      <lom:role>
-        <lom:source>
-          <lom:langstring>LOMv1.0</lom:langstring>
-        </lom:source>
-        <lom:value>
-          <lom:langstring xml:lang="en">content provider</lom:langstring>
-        </lom:value>
-      </lom:role>
-      <lom:centity>
-        <lom:vcard>
-                     begin:vcard
-                     n:Franciscus
-                     fn:Emeritus
-                     end:vcard
-               </lom:vcard>
-      </lom:centity>
-      <lom:date>
-        <lom:datetime>20/04/2008</lom:datetime>
-      </lom:date>
-    </lom:contribute>
-    <lom:contribute>
-      <lom:role>
-        <lom:source>
-          <lom:langstring>LOMv1.0</lom:langstring>
-        </lom:source>
-        <lom:value>
-          <lom:langstring xml:lang="en">educational validator</lom:langstring>
-        </lom:value>
-      </lom:role>
-      <lom:centity>
-        <lom:vcard>
-                     begin:vcard
-                     n:Pedro
-                     fn:Censor
-                     end:vcard
-               </lom:vcard>
-      </lom:centity>
-      <lom:date>
-        <lom:datetime>24/04/2008</lom:datetime>
-      </lom:date>
-    </lom:contribute>
-  </lom:lifecycle>
-
-  <!-- metametadata -->
-  <lom:metametadata>
-    <lom:contribute>
-      <lom:role>
-        <lom:source>
-          <lom:langstring>LOMv1.0</lom:langstring>
-        </lom:source>
-        <lom:value>
-          <lom:langstring xml:lang="en">creator</lom:langstring>
-        </lom:value>
-      </lom:role>
-      <lom:centity>
-        <lom:vcard>
-                     begin:vcard
-                     n:Lula
-                     fn:Hacker
-                     end:vcard
-               </lom:vcard>
-      </lom:centity>
-      <lom:date>
-        <lom:datetime>30/05/2008</lom:datetime>
-      </lom:date>
-    </lom:contribute>
-    <lom:contribute>
-      <lom:role>
-        <lom:source>
-          <lom:langstring>LOMv1.0</lom:langstring>
-        </lom:source>
-        <lom:value>
-          <lom:langstring xml:lang="en">validator</lom:langstring>
-        </lom:value>
-      </lom:role>
-      <lom:centity>
-        <lom:vcard>
-                     begin:vcard
-                     n:Mike
-                     fn:Hammer
-                     end:vcard
-               </lom:vcard>
-      </lom:centity>
-      <lom:date>
-        <lom:datetime>1/06/2008</lom:datetime>
-      </lom:date>
-    </lom:contribute>
-    <lom:metadatascheme>LOMv1.0</lom:metadatascheme>
-    <lom:language>es</lom:language>
-  </lom:metametadata>
-
-  <!-- Técnico -->
-  <lom:technical>
-    <lom:format>img/jpeg</lom:format>
-    <lom:size>512456</lom:size>
-    <lom:location>ftp://imgserver.com/images/math/gauss.jpg</lom:location>
-    <lom:requirement>
-      <lom:type>
-        <lom:source>
-          <lom:langstring>LOMv1.0</lom:langstring>
-        </lom:source>
-        <lom:value>
-          <lom:langstring xml:lang="en">browser</lom:langstring>
-        </lom:value>
-      </lom:type>
-      <lom:name>
-        <lom:source>
-          <lom:langstring>LOMv1.0</lom:langstring>
-        </lom:source>
-        <lom:value>
-          <lom:langstring xml:lang="en">any</lom:langstring>
-        </lom:value>
-      </lom:name>
-    </lom:requirement>
-    <lom:installationremarks>
-      <lom:langstring>Basta disponer de un visualizador de imágenes JPG
-                                        como añadido al navegador</lom:langstring>
-    </lom:installationremarks>
-    <lom:otherplatformrequirements>
-      <lom:langstring>Opcionalmente, cualquier otro tipo
-                                        de visualizador</lom:langstring>
-    </lom:otherplatformrequirements>
-  </lom:technical>
-
-  <!-- Educacional -->
-  <lom:educational>
-    <lom:interactivitytype>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">expositive</lom:langstring>
-      </lom:value>
-    </lom:interactivitytype>
-    <lom:learningresourcetype>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">figure</lom:langstring>
-      </lom:value>
-    </lom:learningresourcetype>
-    <lom:interactivitylevel>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">very low</lom:langstring>
-      </lom:value>
-    </lom:interactivitylevel>
-    <lom:semanticdensity>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">high</lom:langstring>
-      </lom:value>
-    </lom:semanticdensity>
-    <lom:intendedenduserrole>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">learner</lom:langstring>
-      </lom:value>
-    </lom:intendedenduserrole>
-    <lom:context>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">higher education</lom:langstring>
-      </lom:value>
-    </lom:context>
-    <lom:typicalagerange>
-      <lom:langstring>16-20</lom:langstring>
-    </lom:typicalagerange>
-    <lom:difficulty>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">medium</lom:langstring>
-      </lom:value>
-    </lom:difficulty>
-    <lom:typicallearningtime>
-      <lom:description>
-        <lom:langstring>30 minutos</lom:langstring>
-      </lom:description>
-    </lom:typicallearningtime>
-    <lom:description>
-      <lom:langstring>Entendimiento cualitativo de los principales parámetros
-                       de la normal univariante.</lom:langstring>
-    </lom:description>
-    <lom:language>es</lom:language>
-  </lom:educational>
-
-  <!-- Derechos -->
-  <lom:rights>
-    <lom:cost>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">no</lom:langstring>
-      </lom:value>
-    </lom:cost>
-    <lom:copyrightandotherrestrictions>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">no</lom:langstring>
-      </lom:value>
-    </lom:copyrightandotherrestrictions>
-    <lom:description>
-      <lom:langstring>Este recurso no está sujeto a derechos de autor alguno,
-                        porque las matemáticas son patrimonio universal de
-                       la humanidad.</lom:langstring>
-    </lom:description>
-  </lom:rights>
-
-  <!-- Relacion -->
-  <lom:relation>
-    <lom:kind>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">isPartOf</lom:langstring>
-      </lom:value>
-    </lom:kind>
-    <lom:resource>
-      <lom:identifier>doc098765</lom:identifier>
-      <lom:description>
-        <lom:langstring>Manual sobre variables
-                                aleatorias unidimensionales</lom:langstring>
-      </lom:description>
-    </lom:resource>
-  </lom:relation>
-  <lom:relation>
-    <lom:kind>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">isRequiredBy</lom:langstring>
-      </lom:value>
-    </lom:kind>
-    <lom:resource>
-      <lom:identifier>doc098765</lom:identifier>
-      <lom:description>
-        <lom:langstring>Manual sobre variables
-                                aleatorias unidimensionales</lom:langstring>
-      </lom:description>
-    </lom:resource>
-  </lom:relation>
-  <lom:relation>
-    <lom:kind>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring xml:lang="en">isReferencedBy</lom:langstring>
-      </lom:value>
-    </lom:kind>
-    <lom:resource>
-      <lom:description>
-        <lom:langstring>Manual sobre reconocimiento
-                                estadístico de patrones</lom:langstring>
-      </lom:description>
-      <lom:catalogentry>
-        <lom:catalog>manuales</lom:catalog>
-        <lom:entry>
-          <lom:langstring>e08765</lom:langstring>
-        </lom:entry>
-      </lom:catalogentry>
-    </lom:resource>
-  </lom:relation>
-
-  <!-- Anotaci[on -->
-  <lom:annotation>
-    <lom:person>
-      <lom:vcard>
-                begin:vcard
-                n:Franciscus
-                fn:Emeritus
-                end:vcard
-            </lom:vcard>
-    </lom:person>
-    <lom:date>
-      <lom:datetime>25-10-2008</lom:datetime>
-    </lom:date>
-    <lom:description>
-      <lom:langstring>Considero la combinación de la expresión formal y
-                la representación gráfica muy adecuada para transmitir
-                el concepto de normalidad.</lom:langstring>
-    </lom:description>
-  </lom:annotation>
-  <lom:annotation>
-    <lom:person>
-      <lom:vcard>
-                begin:vcard
-                n:Bacus
-                fn:Floyd
-                end:vcard
-            </lom:vcard>
-    </lom:person>
-    <lom:date>
-      <lom:datetime>25-11-2008</lom:datetime>
-    </lom:date>
-    <lom:description>
-      <lom:langstring>El énfasis de la franja de normalidad es apropiado,
-                           aunque deberían resaltarse los puntos de
-                           inflexión..</lom:langstring>
-    </lom:description>
-  </lom:annotation>
-
-  <!-- Clasificacion -->
-  <lom:classification>
-    <lom:purpose>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring>discipline</lom:langstring>
-      </lom:value>
-    </lom:purpose>
-    <lom:description>
-      <lom:langstring>Materia obligatoria en estadística</lom:langstring>
-    </lom:description>
-  </lom:classification>
-  <lom:classification>
-    <lom:purpose>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring>discipline</lom:langstring>
-      </lom:value>
-    </lom:purpose>
-    <lom:keyword>
-      <lom:langstring>matemáticas</lom:langstring>
-    </lom:keyword>
-    <lom:keyword>
-      <lom:langstring>estadística</lom:langstring>
-    </lom:keyword>
-    <lom:keyword>
-      <lom:langstring>probabilidad</lom:langstring>
-    </lom:keyword>
-  </lom:classification>
-  <lom:classification>
-    <lom:purpose>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring>discipline</lom:langstring>
-      </lom:value>
-    </lom:purpose>
-    <lom:taxonpath>
-      <lom:source>
-        <lom:langstring>carreras</lom:langstring>
-      </lom:source>
-      <lom:taxon>
-        <lom:entry>
-          <lom:langstring>informática</lom:langstring>
-        </lom:entry>
-        <lom:taxon>
-          <lom:entry>
-            <lom:langstring>primer ciclo</lom:langstring>
-          </lom:entry>
-          <lom:taxon>
-            <lom:entry>
-              <lom:langstring>estadística</lom:langstring>
-            </lom:entry>
-          </lom:taxon>
-        </lom:taxon>
-      </lom:taxon>
-    </lom:taxonpath>
-  </lom:classification>
-  <lom:classification>
-    <lom:purpose>
-      <lom:source>
-        <lom:langstring>LOMv1.0</lom:langstring>
-      </lom:source>
-      <lom:value>
-        <lom:langstring>discipline</lom:langstring>
-      </lom:value>
-    </lom:purpose>
-    <lom:taxonpath>
-      <lom:source>
-        <lom:langstring>carreras</lom:langstring>
-      </lom:source>
-      <lom:taxon>
-        <lom:id>n455</lom:id>
-      </lom:taxon>
-    </lom:taxonpath>
-  </lom:classification>
-</lom:lom>  `;
+              <lom:lom>
+                <!-- general -->
+                <lom:general>    
+                  <lom:title>
+                    <lom:langstring xml:lang="es">${course.metadata.general.title}</lom:langstring>
+                  </lom:title>
+                  <lom:language>${course.metadata.general.language}</lom:language>
+                  <lom:description>
+                    <lom:langstring xml:lang="es">${course.metadata.general.description}</lom:langstring>
+                  </lom:description>
+                  <lom:keywords>
+                    <lom:langstring xml:lang="es">${course.metadata.general.keywords}</lom:langstring>
+                  </lom:keywords>
+                </lom:general>
+              
+                <!-- ciclo de vida -->
+                <lom:lifecycle>
+                  <lom:version>
+                    <lom:langstring xml:lang="es">${course.metadata.lifecycle.version}</lom:langstring>
+                  </lom:version>
+                  <lom:contribute>
+                    <lom:role>        
+                      <lom:value>
+                        <lom:langstring xml:lang="en">content provider</lom:langstring>
+                      </lom:value>
+                    </lom:role>
+                    <lom:centity>
+                      <lom:vcard>
+                                  begin:vcard
+                                  fn:${course.metadata.lifecycle.author}
+                                  end:vcard
+                            </lom:vcard>
+                    </lom:centity>
+                    <lom:date>
+                      <lom:datetime>${course.metadata.lifecycle.date}</lom:datetime>
+                    </lom:date>
+                  </lom:contribute>
+                  <lom:entity>
+                    <lom:langstring xml:lang="es">${course.metadata.lifecycle.entity}</lom:langstring>
+                  </lom:entity>
+                </lom:lifecycle>
+              
+                <!-- Técnico -->
+                <lom:technical>
+                  <lom:format>${course.metadata.technical.format}</lom:format>
+                  <lom:size>${course.metadata.technical.size}</lom:size>
+                  <lom:location>${course.metadata.technical.location}</lom:location>
+                  <lom:requirement>
+                    <lom:type>
+                      <lom:value>
+                        <lom:langstring xml:lang="es">${course.metadata.technical.requirement}</lom:langstring>
+                      </lom:value>
+                    </lom:type>
+                  </lom:requirement>
+                  <lom:installationremarks>
+                    <lom:langstring xml:lang="es">${course.metadata.technical.instructions}</lom:langstring>
+                  </lom:installationremarks>
+                </lom:technical>
+              
+                <!-- Educacional -->
+                <lom:educational>
+                  <lom:interactivitytype>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.educational.interactivityType}</lom:langstring>
+                    </lom:value>
+                  </lom:interactivitytype>
+                  <lom:learningresourcetype>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.educational.learningResourceType}</lom:langstring>
+                    </lom:value>
+                  </lom:learningresourcetype>
+                  <lom:interactivitylevel>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.educational.interactivityLevel}</lom:langstring>
+                    </lom:value>
+                  </lom:interactivitylevel>
+                  <lom:intendedenduserrole>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.educational.targetPopulation}</lom:langstring>
+                    </lom:value>
+                  </lom:intendedenduserrole>
+                  <lom:context>      
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.educational.context}</lom:langstring>
+                    </lom:value>
+                  </lom:context>
+                </lom:educational>
+              
+                <!-- Derechos -->
+                <lom:rights>
+                  <lom:cost>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.rights.cost}</lom:langstring>
+                    </lom:value>
+                  </lom:cost>
+                  <lom:copyrightandotherrestrictions>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.rights.copyright}</lom:langstring>
+                    </lom:value>
+                  </lom:copyrightandotherrestrictions>
+                  <lom:description>
+                    <lom:langstring xml:lang="es">${course.metadata.rights.otherRestrictions}</lom:langstring>
+                  </lom:description>
+                </lom:rights>
+              
+                <!-- Anotaci[on -->
+                <lom:annotation>
+                  <lom:educationaluse>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.annotation.educationalUse}</lom:langstring>
+                    </lom:value>
+                  </lom:educationaluse>
+                </lom:annotation>
+              
+                <!-- Clasificacion -->
+                <lom:classification>
+                  <lom:purpose>
+                    <lom:value>
+                      <lom:langstring xml:lang="es">${course.metadata.classification.source}</lom:langstring>
+                    </lom:value>
+                  </lom:purpose>
+                  <lom:taxonpath>
+                    <lom:source>
+                      <lom:langstring xml:lang="es">${course.metadata.classification.taxonPath}</lom:langstring>
+                    </lom:source>
+                    <lom:taxon>
+                      <lom:id xml:lang="es">${course.metadata.classification.taxonPath}</lom:id>
+                    </lom:taxon>
+                  </lom:taxonpath>
+                </lom:classification>
+              </lom:lom>`;
   return xml;
 }

@@ -62,7 +62,7 @@ class Course extends React.Component {
         <div className="flex flex-wrap justify-center pt-10">
           <div className="flex flex-wrap w-2/3 sm:pr-6 content-end justify-end">
             <button
-              className="font-poppins font-semibold"
+              className="font-poppins font-semibold outline-none focus:outline-none"
               onClick={this.handleOpenModal}
             >
               Ver Metadata
@@ -91,7 +91,7 @@ class Course extends React.Component {
                 </div>
 
                 <button
-                  className="text-left text-3xl "
+                  className="text-left text-3xl outline-none focus:outline-none"
                   onClick={this.handleCloseModal}
                 >
                   <FontAwesomeIcon icon={faTimes} color="gray" />
