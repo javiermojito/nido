@@ -51,7 +51,7 @@ var data = [
         interactivityType: "Activo",
         learningResourceType: "Diapositiva",
         interactivityLevel: "Medio",
-        targetPopulation: "Aprendiz de 16-40 años",
+        targetPopulation: "Aprendiz",
         context: "Educación Secundaria, Educación Superior"
       },
       rights:{
@@ -121,7 +121,7 @@ var data = [
         interactivityType: "Activo",
         learningResourceType: "Diapositiva",
         interactivityLevel: "Medio",
-        targetPopulation: "Aprendiz de 16-40 años",
+        targetPopulation: "Aprendiz",
         context: "Educación Secundaria, Educación Superior"
       },
       rights:{
@@ -196,7 +196,7 @@ var data = [
         interactivityType: "Activo",
         learningResourceType: "Diapositiva",
         interactivityLevel: "Medio",
-        targetPopulation: "Aprendiz de 16-40 años",
+        targetPopulation: "Aprendiz",
         context: "Educación Secundaria, Educación Superior"
       },
       annotation: {
@@ -261,7 +261,7 @@ var data = [
         interactivityType: "Activo",
         learningResourceType: "Diapositiva",
         interactivityLevel: "Medio",
-        targetPopulation: "Aprendiz de 16-40 años",
+        targetPopulation: "Aprendiz",
         context: "Educación Secundaria, Educación Superior"
       },
       rights:{
@@ -304,7 +304,9 @@ export function getCourseFromId(id) {
 
 export function getMetadataXMLFromCourseId(id) {
   let course = getCourseFromId(id);
-  var xml = `<?xml version="1.0"?>
+  var xml = `<metadata>
+              <schema>LOM</schema>
+              <schemaversion>1.0</schemaversion>
               <lom:lom>
                 <!-- general -->
                 <lom:general>    
@@ -435,6 +437,7 @@ export function getMetadataXMLFromCourseId(id) {
                     </lom:taxon>
                   </lom:taxonpath>
                 </lom:classification>
-              </lom:lom>`;
+              </lom:lom>
+            </metadata>`;
   return xml;
 }
