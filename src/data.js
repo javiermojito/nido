@@ -27,7 +27,7 @@ var data = [
       general: {
         title: "Introducción al diseño",
         language: "Español",
-        description: "El diseño lo es todo. Descubre los conceptos esenciales para empezar a comunicar tus ideas a través de composiciones gráficas.",
+        description: "El contenido del recursos describe los conceptos fundamentales para entender el proceso de diseño, a través del uso de piezas reales basadas en distintos contextos.",
         keywords: "Diseño, Design Thinking, Composición, Tipografía, Elementos visuales.",
       },
       lifecycle: {
