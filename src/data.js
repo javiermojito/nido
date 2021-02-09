@@ -9,10 +9,10 @@ var data = [
     imageAlt: "Logo introducción al diseño",
     backgroundStyle: { backgroundColor: "#B7B6B6" },
     textColor: { color: "#000" },
-    duration: "20",
+    duration: "90",
     courseRoute: "/cursos/introduccion-diseño",
-    numUnits: 5,
-    numSubjects: 15,
+    numUnits: 4,
+    numSubjects: 14,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/cca49c1e32c44e95acb0dcde608902eb" frameborder="0" allowfullscreen/>',
     linkForm:
@@ -28,17 +28,17 @@ var data = [
         title: "Introducción al diseño",
         language: "Español",
         description: "LOREM IPSUM",
-        keywords: "LOREM, IPSUM",
+        keywords: "Diseño, Design Thinking, Composición, Tipografía, Elementos visuales.",
       },
       lifecycle: {
         version: "1.0",
         author: "Javier Andrés Collazos Gómez",
-        entity: "Universidad de Ibagué",
-        date: "09/09/09",
+        entity: "Universidad de Ibagué, Nido",
+        date: "09/02/2021",
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999",
+        size: "------",
         location:
           "https://javiermojito.github.io/nido/#/cursos/introduccion-diseño",
         requirement: `- Tipo: Navegador 
@@ -282,10 +282,17 @@ var data = [
   },
 ];
 
+/**
+ *  Retorna el objeto con la información de todos los cursos.
+ */
 export function getCourses() {
   return data;
 }
 
+/**
+ * Si la ruta que ingresa por parámetro corresponde a la ruta de alguno de los cursos almaneados en data, se retorna el curso.
+ * @param {*} path - Ruta del curso
+ */
 export function getCourseFromPath(path) {
   return data.find((c) => {
     if (c.courseRoute === path) {
@@ -294,6 +301,10 @@ export function getCourseFromPath(path) {
   });
 }
 
+/**
+ * Si el id que ingresa por parámetro corresponde al id de alguno de los cursos almaneados en data, se retorna el curso.
+ * @param {*} id - ID del curso
+ */
 export function getCourseFromId(id) {
   return data.find((c) => {
     if (c.id === id) {
@@ -302,6 +313,11 @@ export function getCourseFromId(id) {
   });
 }
 
+/**
+ * Si el id que ingresa por parámetro corresponde al id de alguno de los cursos almacenados en data
+ * se obtienen los datos del curso y se interpolan sobre el String que contiene la estructura de metadata IEEE-LOM.
+ * @param {*} id - ID del curso
+ */
 export function getMetadataXMLFromCourseId(id) {
   let course = getCourseFromId(id);
   var xml = `<metadata>
