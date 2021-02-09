@@ -3,7 +3,7 @@ var data = [
     id: 0,
     title: "Introducción al diseño",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu eros mi",
+      "El diseño lo es todo. Descubre los conceptos esenciales para empezar a comunicar tus ideas a través de composiciones gráficas.",
     image: "https://i.imgur.com/4VkW8FW.png",
     imageHR: "https://i.imgur.com/jywVD4h.png",
     imageAlt: "Logo introducción al diseño",
@@ -27,7 +27,7 @@ var data = [
       general: {
         title: "Introducción al diseño",
         language: "Español",
-        description: "LOREM IPSUM",
+        description: "El diseño lo es todo. Descubre los conceptos esenciales para empezar a comunicar tus ideas a través de composiciones gráficas.",
         keywords: "Diseño, Design Thinking, Composición, Tipografía, Elementos visuales.",
       },
       lifecycle: {
