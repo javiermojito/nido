@@ -27,7 +27,7 @@ var data = [
       general: {
         title: "Introducción al diseño",
         language: "Español",
-        description: "El contenido del recursos describe los conceptos fundamentales para entender el proceso de diseño, a través del uso de piezas reales basadas en distintos contextos.",
+        description: "El contenido del recurso describe los conceptos fundamentales para entender el proceso de diseño, a través del uso de piezas reales basadas en distintos contextos.",
         keywords: "Diseño, Design Thinking, Composición, Tipografía, Elementos visuales.",
       },
       lifecycle: {
@@ -74,16 +74,16 @@ var data = [
     id: 1,
     title: "Teoría del color",
     description:
-      "Mauris luctus aliquet dui commodo fringilla. Vivamus porta risus a arcu mattis, at volutpat ante auctor. Nunc interdum facilisis ex.",
+      "El color es un elemento visual fundamental para el diseño, incluso, es capaz de generar distintas emociones. Aprende a seleccionarlo, combinarlo y utilizarlo gracias a la teoría del color!",
     image: "https://i.imgur.com/J4dXVjY.png",
     imageHR: "https://i.imgur.com/CXbaTua.png",
     imageAlt: "Logo Teoría de color",
     backgroundStyle: { backgroundColor: "#222222" },
     textColor: { color: "#FFF" },
-    duration: "30",
+    duration: "60",
     courseRoute: "/cursos/teoria-color",
-    numUnits: 6,
-    numSubjects: 23,
+    numUnits: 4,
+    numSubjects: 10,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/e776e4804362430a9b08f925ec70bc67" frameborder="0" allowfullscreen/>',
     linkForm:
@@ -98,18 +98,18 @@ var data = [
       general: {
         title: "Teoría del color",
         language: "Español",
-        description: "LOREM IPSUM",
-        keywords: "LOREM, IPSUM",
+        description: "El contenido del recurso describe los conceptos para comprender el origen del color y todo lo relacionado a la teoría del mismo. Hace uso de piezas de artistas como ejemplos de las distintas maneras de aplicar el color en una composición.",
+        keywords: "Teoría del color, diseño, color, paletas de colores, armonía cromática, psicología del color, sistemas de colores.",
       },
       lifecycle: {
         version: "1.0",
         author: "Javier Andrés Collazos Gómez",
         entity: "Universidad de Ibagué",
-        date: "09/09/09",
+        date: "11/02/2021",
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999",
+        size: "-----",
         location: "https://javiermojito.github.io/nido/#/cursos/teoria-color",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
