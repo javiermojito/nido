@@ -142,9 +142,9 @@ var data = [
   },
   {
     id: 2,
-    title: "Diseño UX",
+    title: "Fundamentos UX",
     description:
-      "Praesent bibendum venenatis erat, a congue ligula tincidunt a. In mauris lorem, dapibus quis lobortis non, efficitur a nisi. Suspendisse turpis orci, facilisis eu erat eget, rhoncus aliquet eros.",
+      "El éxito de producto digital depende de la experiencia de uso de quien la utiliza. Con este curso, aprenderás los conceptos esenciales relacionados con los principios de usabailidad, el User Research, la arquitectura de información y el prototipado con Wireframes.",
     image: "https://i.imgur.com/6BhOe0c.png",
     imageHR: "https://i.imgur.com/ZEE7h01.png",
     imageAlt: "Logo Diseño UX",
@@ -168,8 +168,8 @@ var data = [
       general: {
         title: "Diseño UX",
         language: "Español",
-        description: "LOREM IPSUM",
-        keywords: "LOREM, IPSUM",
+        description: "El contenido del recurso desarrolla las etapas del proceso de diseño UX para formulación de un producto digital, basados en una idea. Describe en detalle la investigación por User Research con variedad de técnicas, y el proceso de arquitectura de información y prototipado de un producto con wireframes. ",
+        keywords: "User Experiencie, Experiencia de usuario, User Research, Wireframes, Prototipos, investigación, diseño, diseño UX",
       },
       lifecycle: {
         version: "1.0",
@@ -179,7 +179,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999",
+        size: "----",
         location: "https://javiermojito.github.io/nido/#/cursos/diseno-ui",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
