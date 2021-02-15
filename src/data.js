@@ -144,7 +144,7 @@ var data = [
     id: 2,
     title: "Fundamentos UX",
     description:
-      "El éxito de producto digital depende de la experiencia de uso de quien la utiliza. Con este curso, aprenderás los conceptos esenciales relacionados con los principios de usabailidad, el User Research, la arquitectura de información y el prototipado con Wireframes.",
+      "El éxito de producto digital depende de la experiencia de uso de quien la utiliza. Con este curso, aprenderás los conceptos esenciales relacionados con los principios de usabilidad, el User Research, la arquitectura de información y el prototipado con Wireframes.",
     image: "https://i.imgur.com/6BhOe0c.png",
     imageHR: "https://i.imgur.com/ZEE7h01.png",
     imageAlt: "Logo Diseño UX",
@@ -214,7 +214,7 @@ var data = [
     id: 3,
     title: "Diseño UI/UX",
     description:
-      "Proin non sapien bibendum, accumsan neque vitae, maximus ante. Fusce placerat ultricies justo ut interdum. Sed ut eleifend mi. Sed ullamcorper condimentum sapien.",
+      "Aprende a diseñar interfaces adaptables, define su arquitectura y sigue las mejores prácticas de este campo del diseño.",
     image: "https://i.imgur.com/DZihR3o.png",
     imageHR: "https://i.imgur.com/ypQQWEY.png",
     imageAlt: "Logo Diseño UI/UX",
@@ -238,8 +238,8 @@ var data = [
       general: {
         title: "Diseño UI/UX",
         language: "Español",
-        description: "LOREM IPSUM",
-        keywords: "LOREM, IPSUM",
+        description: "El contenido del recurso desarrolla elementos esenciales para el diseño de interfaces de usuario, promueve el uso de prácticas de diseño responsivo y fomenta la importancia de los patrones de diseño para este campo.",
+        keywords: "Diseño UI/UX, User Interface, Patrones de diseño, Dark Patterns, Layout, Diseño responsivo, Sistemas de diseño",
       },
       lifecycle: {
         version: "1.0",
