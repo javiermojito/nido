@@ -91,7 +91,7 @@ var data = [
     linkReport:
       "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
     linkDownload:
-      "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+      "https://drive.google.com/drive/folders/1XtEfj2tWTVBhmb3FPTE60hz_3AddhmK4?usp=sharing",
     linkFrame: "https://iseazy.com/dl/e776e4804362430a9b08f925ec70bc67",
     upNext: 2,
     metadata: {
@@ -109,7 +109,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "-----",
+        size: "160",
         location: "https://javiermojito.github.io/nido/#/cursos/teoria-color",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
