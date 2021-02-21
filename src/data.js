@@ -20,7 +20,7 @@ var data = [
     linkReport:
       "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
     linkDownload:
-      "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+      "https://drive.google.com/drive/folders/1fL4pPPesnmBQBVqCrehVpJfeCF0xhroM?usp=sharing",
     linkFrame: "https://iseazy.com/dl/cca49c1e32c44e95acb0dcde608902eb",
     upNext: 1,
     metadata: {
@@ -38,7 +38,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "------",
+        size: "135",
         location:
           "https://javiermojito.github.io/nido/#/cursos/introduccion-diseño",
         requirement: `- Tipo: Navegador 
