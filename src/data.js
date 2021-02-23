@@ -151,7 +151,7 @@ var data = [
     backgroundStyle: { backgroundColor: "#342343" },
     textColor: { color: "#FFF" },
     duration: "100",
-    courseRoute: "/cursos/diseno-ui",
+    courseRoute: "/cursos/fundamentos-ux",
     numUnits: 4,
     numSubjects: 11,
     frame:
