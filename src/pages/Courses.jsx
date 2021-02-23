@@ -16,10 +16,10 @@ const Courses = (props) => {
         <div>
           <Badge {...data[0]} />
         </div>
-        {/* <div>
+        <div>
           <Badge {...data[1]} />
         </div>
-        <div>
+        {/* <div>
           <Badge {...data[2]} />
         </div>
         <div>

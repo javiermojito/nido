@@ -80,7 +80,7 @@ var data = [
     imageAlt: "Logo Teoría de color",
     backgroundStyle: { backgroundColor: "#222222" },
     textColor: { color: "#FFF" },
-    duration: "60",
+    duration: "90",
     courseRoute: "/cursos/teoria-color",
     numUnits: 4,
     numSubjects: 10,
@@ -150,10 +150,10 @@ var data = [
     imageAlt: "Logo Diseño UX",
     backgroundStyle: { backgroundColor: "#342343" },
     textColor: { color: "#FFF" },
-    duration: "30",
+    duration: "100",
     courseRoute: "/cursos/diseno-ui",
-    numUnits: 6,
-    numSubjects: 23,
+    numUnits: 4,
+    numSubjects: 11,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/325b1f9eea684999b87dc255c8383d87" frameborder="0" allowfullscreen/>',
     linkForm:
@@ -161,7 +161,7 @@ var data = [
     linkReport:
       "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
     linkDownload:
-      "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+      "https://drive.google.com/drive/folders/14-g4AqvuYmCQQPFoCksEB4WOisiAjF6-?usp=sharing",
     linkFrame: "https://iseazy.com/dl/325b1f9eea684999b87dc255c8383d87",
     upNext: 3,
     metadata: {
@@ -179,7 +179,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "----",
+        size: "218",
         location: "https://javiermojito.github.io/nido/#/cursos/diseno-ui",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
