@@ -144,7 +144,7 @@ var data = [
     id: 2,
     title: "Fundamentos UX",
     description:
-      "El éxito de producto digital depende de la experiencia de uso de quien la utiliza. Con este curso, aprenderás los conceptos esenciales relacionados con los principios de usabilidad, el User Research, la arquitectura de información y el prototipado con Wireframes.",
+      "El éxito de producto digital depende de la experiencia que sienta quien lo utiliza. Con este curso, aprenderás los conceptos esenciales relacionados con los principios de usabilidad, el User Research, la arquitectura de información y el prototipado con Wireframes.",
     image: "https://i.imgur.com/6BhOe0c.png",
     imageHR: "https://i.imgur.com/ZEE7h01.png",
     imageAlt: "Logo Diseño UX",
