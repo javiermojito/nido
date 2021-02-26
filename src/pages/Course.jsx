@@ -106,7 +106,7 @@ class Course extends React.Component {
         </div>
         <Content {...this.course} />
         <ActionButtons {...this.course} />
-        {/* <UpNext {...this.upNext} /> */}
+        <UpNext {...this.upNext} />
       </React.Fragment>
     );
   }

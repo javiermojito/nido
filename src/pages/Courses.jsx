@@ -22,9 +22,9 @@ const Courses = (props) => {
         <div>
           <Badge {...data[2]} />
         </div>
-        {/* <div>
+        <div>
           <Badge {...data[3]} />
-        </div> */}
+        </div>
       </div>
     </div>
   );
