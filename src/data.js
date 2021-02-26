@@ -220,10 +220,10 @@ var data = [
     imageAlt: "Logo Diseño UI/UX",
     backgroundStyle: { backgroundColor: "#4E410E" },
     textColor: { color: "#FFF" },
-    duration: "30",
+    duration: "90",
     courseRoute: "/cursos/diseno-uiux",
-    numUnits: 6,
-    numSubjects: 23,
+    numUnits: 4,
+    numSubjects: 12,
     frame:
       '<iframe width="100%" height="100%" src="https://iseazy.com/dl/edc605889bef4c9fbf671da6290ed9d3" frameborder="0" allowfullscreen/>',
     linkForm:
