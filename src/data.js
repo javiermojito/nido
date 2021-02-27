@@ -231,7 +231,7 @@ var data = [
     linkReport:
       "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__rCZHlhUN0lMMEtUSk9EUlJZWlcwTlJQWVU5MFA5Ty4u",
     linkDownload:
-      "https://drive.google.com/uc?id=0B64DzTrR_X24M2g3NXNVRGdDWFZGN1d4cGlGaXFwVWZZbm5N&export=download",
+      "https://drive.google.com/drive/folders/1eaTXuk2MB7FI-FOlrw_ztRW0C9ndmaah?usp=sharing",
     linkFrame: "https://iseazy.com/dl/edc605889bef4c9fbf671da6290ed9d3",
     upNext: 0,
     metadata: {
@@ -249,7 +249,7 @@ var data = [
       },
       technical: {
         format: "iFrame, .zip",
-        size: "99999",
+        size: "250",
         location: "https://javiermojito.github.io/nido/#/cursos/diseno-uiux",
         requirement: `- Tipo: Navegador 
                       - Nombre: Cualquiera`,
