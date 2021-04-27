@@ -23,28 +23,28 @@ const ActionButtons = (props) => {
         </div> */}
 
         {/* VERSION B */}
-        <a className="hidden lg:inline" href={props.linkFrame}>
+        <a className="hidden lg:inline" href={props.linkFrame} target="_blank">
           <div className="w-full h-14 rounded-xl bg-gradient-to-br from-purple-400 to-purple-500 shadow-sm flex flex-row items-center justify-center transition duration-400 ease-in-out transform hover:-translate-y-0.5">
             <img className="mx-auto mr-0" src="https://img.icons8.com/fluent-systems-filled/32/ffffff/external-link-squared.png"/> 
             <span className="mx-auto ml-4 text-left text-2xl sm:text-md sm:ml-2 lg:text-sm xl:text-xl text-white font-semibold">Abrir en pestaña</span>
           </div>
         </a>
 
-        <a href={props.linkForm}>
+        <a href={props.linkForm} target="_blank">
           <div className="w-full h-14 rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-sm flex flex-row items-center justify-center transition duration-400 ease-in-out transform hover:-translate-y-0.5">
             <img className="mx-auto mr-0" src="https://img.icons8.com/ios-filled/32/ffffff/very-popular-topic.png"/> 
             <span className="mx-auto ml-4 text-left text-2xl sm:text-lg sm:ml-2 lg:text-sm xl:text-xl text-white font-semibold">Calificar OVA</span>
           </div>
         </a>
         
-        <a href={props.linkReport}>
+        <a href={props.linkReport} target="_blank">
           <div className="w-full h-14 rounded-xl bg-gradient-to-br from-red-400 to-red-500 shadow-sm flex flex-row items-center justify-center transition duration-400 ease-in-out transform hover:-translate-y-0.5">
             <img className="mx-auto mr-0" src="https://img.icons8.com/ios-filled/32/ffffff/box-important.png"/> 
             <span className="mx-auto ml-4 text-left text-2xl sm:text-lg sm:ml-2 lg:text-sm xl:text-xl text-white font-semibold">Reportar error</span>
           </div>
         </a>
         
-        <a href={props.linkDownload}>
+        <a href={props.linkDownload} target="_blank">
           <div className="w-full h-14 rounded-xl bg-gradient-to-br from-green-400 to-green-500 shadow-sm flex flex-row items-center justify-center transition duration-400 ease-in-out transform hover:-translate-y-0.5">
             <img className="mx-auto mr-0" src="https://img.icons8.com/ios-filled/32/ffffff/circled-down.png"/> 
             <span className="mx-auto ml-4 text-left text-2xl sm:text-lg sm:ml-2 lg:text-sm xl:text-xl text-white font-semibold">Descargar OVA</span>
